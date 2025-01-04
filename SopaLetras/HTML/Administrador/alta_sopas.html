@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Administración: Alta Sopas</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina para dar de alta las sopas de letras">
+    <meta name="author" content="Alexandra y Pablo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSAdmin/footer-header.css">
+    <link rel="stylesheet" href="CSSAdmin/alta-sopas.css">
+    <link rel="icon" type="image/x-icon" href="../Multimedia/Imagenes/favicon.ico">
+    </head>
+<body>
+<header> 
+    <a href="../Usuario/wordSearch.html" class="logo"><img src="../Multimedia/Imagenes/logoadmin.png" alt="Not Found IMG" height="80"
+        width="80"></a> 
+    <nav>
+        <ul>
+            <li>Consultar:
+                <ul>
+                <li><a href="./consulta_usuarios.html">Consulta Usuarios</a></li>
+                <li><a href="./consulta_sopas.html">Consulta Sopas</a></li>
+                <li><a href="./consultar_resultados.html">Consultar Resultados</a></li>
+                <li><a href="./consulta_ranking.html">Consultar Ranking</a></li>
+                </ul>
+            </li>
+            <li>Altas: 
+                <ul>
+                <li><a href="./alta_sopas.html">Alta Sopas de Letras</a></li>
+                </ul>
+            </li>
+           <li>Bajas: 
+                <ul>
+                <li><a href="./baja_usuarios.html">Baja Usuario</a></li>
+                <li><a href="./baja_sopas.html">Baja Sopa de Letras</a></li>
+                </ul>
+            </li>
+            <li><a href="./ayuda_admin.html">Ayuda</a></li>
+        </ul>
+    </nav>
+    <div id="logout">
+            <button>
+                <a href="../Usuario/wordSearch.html">Logout <img src="../Multimedia/Imagenes/logout.png" alt="Logout" width="15" height="15"></a>
+            </button>
+    </div>
+</header>
+    <main>
+        <form action="procesar_altaSopa.php" method="post" target="_blank" autocomplete="on">
+            <fieldset>
+                <legend>Crear nueva sopa de letras</legend>
+                <h4>Selecciona nivel de dificultad:</h4>
+                <div class="niveles">
+                    <label>
+                        <input type="radio" name="dificultat" value="facil" checked>
+                        Fácil
+                    </label><br>
+                    <label>
+                        <input type="radio" name="dificultat" value="intermedio">
+                        Intermedio
+                    </label><br>
+                    <label>
+                        <input type="radio" name="dificultat" value="dificil">
+                        Difícil
+                    </label><br>
+                </div>
+                <h4>Introduce 10 palabras:</h4>
+                <div class="palabras1">
+                    
+                    <label for="palabra1">Palabra 1: </label>
+                    <input type="text" id="palabra1" name="palabra1" required maxlength="10"><br><br>
+                    <label for="palabra2">Palabra 2: </label>
+                    <input type="text" id="palabra2" name="palabra2" required maxlength="10"><br><br>
+                    <label for="palabra3">Palabra 3: </label>
+                    <input type="text" id="palabra3" name="palabra3" required maxlength="10"><br><br>
+                    <label for="palabra4">Palabra 4: </label>
+                    <input type="text" id="palabra4" name="palabra4" required maxlength="10"><br><br>
+                    <label for="palabra5">Palabra 5: </label>
+                    <input type="text" id="palabra5" name="palabra5" required maxlength="10"><br><br>
+                  </div>
+                  <div class="palabras2">
+                    <label for="palabra6">Palabra 6: </label>
+                    <input type="text" id="palabra6" name="palabra6" required maxlength="10"><br><br>
+                    <label for="palabra7">Palabra 7: </label>
+                    <input type="text" id="palabra7" name="palabra7" required maxlength="10"><br><br>
+                    <label for="palabra8">Palabra 8: </label>
+                    <input type="text" id="palabra8" name="palabra8" required maxlength="10"><br><br>
+                    <label for="palabra9">Palabra 9: </label>
+                    <input type="text" id="palabra9" name="palabra9" required maxlength="10"><br><br>
+                    <label for="palabra10">Palabra 10: </label>
+                    <input type="text" id="palabra10" name="palabra10" required maxlength="10"><br><br>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                    </table>
+                    <div class="letras">
+                        <h4>Selecciona las letras:</h4>
+                        <button type="button">A</button>
+                        <button type="button">B</button>
+                        <button type="button">C</button>
+                        <button type="button">D</button>
+                        <button type="button">E</button>
+                        <button type="button">F</button>
+                        <button type="button">G</button>
+                        <button type="button">H</button>
+                        <button type="button">I</button>
+                        <button type="button">J</button>
+                        <button type="button">K</button>
+                        <button type="button">L</button>
+                        <button type="button">M</button>
+                        <button type="button">N</button>
+                        <button type="button">Ñ</button>
+                        <button type="button">O</button>
+                        <button type="button">P</button>
+                        <button type="button">Q</button>
+                        <button type="button">R</button>
+                        <button type="button">S</button>
+                        <button type="button">T</button>
+                        <button type="button">U</button>
+                        <button type="button">V</button>
+                        <button type="button">W</button>
+                        <button type="button">X</button>
+                        <button type="button">Y</button>
+                        <button type="button">Z</button>
+                    </div>
+                </div>
+                <div class="botones">
+                <button type="submit">Guardar</button>
+                <button type="reset">Resetear</button>
+                <button type="button">Autocompletar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer><!--Se han puesto el instagram y facebook de ambas pero ninguna de las dos tenemos twitter-->
+        <br><a href="https://www.instagram.com/?next=%2F"><img
+                src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="20"
+                width="20">meikoale</a>
+        <a href="https://www.facebook.com/pablo.contento.710"><img src="../Multimedia/Imagenes/redes/Facebook_Logo.png"
+                alt="Not Found ING" height="20" width="20">pablo.contento</a>
+        <br><i><b>Teléfono: </b>971 55 14 89</i>
+        <br><i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez</a> &amp; <a
+                href="mailto:pcontento743@alumnes.politecnicllevant.cat">PContento</a></i>
+        <br><i><b>Dirección: </b>Carrer ses Tapareres, 32, 07500 Manacor, Illes Balears</i>
+        <br><img src="../Multimedia/Imagenes/favicon.ico" alt="No se ha encontrado el logo"><b><a
+                href="../Usuario/wordSearch.html">Word Search, sopa de letras</a></b>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Sopa de Letras: Configuracion</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina para realizar los cambios oportunos en las sopas o las paginas">
+    <meta name="author" content="Alexandra y Pablo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSUser/footer-header.css">
+    <link rel="stylesheet" href="CSSUser/imagenfondo.css">
+    <link rel="stylesheet" href="CSSUser/configuracion.css">
+    <link rel="icon" type="image/x-icon" href="../Multimedia/Imagenes/favicon.ico">
+</head>
+
+<body>
+    <header>
+
+        <a href="./wordSearch.html" class="logo"><img src="../Multimedia/Imagenes/logo2.PNG" alt="Not Found IMG" height="80"
+                    width="80"></a>
+
+        <nav>
+
+            <ul>
+                <li><a href="./wordSearch.html">Inicio</a>
+                    <ul>
+                        <li><a href="./registro_usuario.html">Registrarse</a></li>
+                        <li><a href="./solicitud_admin.html">Solicitud Admin</a></li>
+                    </ul>
+                </li>
+                <li><a href="./juego.html">Juego</a>
+                    <ul>
+                        <li><a href="./consultar_puntuacion.html">Mi puntuación</a></li>
+                    </ul>
+                </li>
+                <li><a href="./ayuda_usuario.html">Ayuda</a></li>
+                <li><a href="./otro_contenido.html">Otros</a>
+                    <ul>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./mapa.html">Mapa</a></li>
+                        <li><a href="./configuracion.html">Configuración</a></li>
+                        <li><a href="./noticias.html">Noticias web</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Administrador/admin_wordSearch.html">Area Privada</a></li>
+               
+            </ul>
+            <div id="logout">
+                <button>
+                    <a href="wordSearch.html">Logout <img src="../Multimedia/Imagenes/logout.png" alt="Logout" width="15" height="15"></a>
+                </button>
+            </div>
+        </nav>
+        <aside id="aside-menu">
+            <img src="../Multimedia/Imagenes/ranking.png.png" alt="" width="100" height="100">
+            <div>
+                <h5>Ranking de Usuarios Registrados:</h5>
+                <ul>
+                    <li><a href="./RankingUsuarios/primerUsuario.html"> Primero</a></li>
+                    <li><a href="./RankingUsuarios/segundoUsuario.html"> Segundo</a></li>
+                    <li><a href="./RankingUsuarios/tercerUsuario.html"> Tercero</a></li>
+                </ul>
+            </div>
+            
+        </aside>
+    </header>
+    <main><!--configuración del juego, posible modo oscuro mas adelante-->
+        <div class="imagen_fondo"><img src="../Multimedia/Imagenes/sopa-de-letras.webp" alt=""></div>
+        <form action="procesar_configuracion.php" method="post" target="_blank" autocomplete="on">
+            <fieldset>
+                <legend>Configuración de la página:</legend>
+                <div class="idioma">
+                <h4>Idioma:</h4>
+                
+                <div class="configurar">
+                <ol>
+                    <li>
+                        <label for="idioma">Seleccione su Idioma:</label>
+                        <select name="idioma" id="idioma">
+                            <option value="castellano"> Castellano </option>
+                            <option value="catalan"> Catalán </option>
+                            <option value="ingles"> Ingles </option>
+                            <option value="portugues"> Portugues </option>
+                            <option value="aleman"> Alemán </option>
+                        </select>
+                    </li>
+                </ol></div>
+            </div>
+                <div class="sonido">
+                <h4>Sonido:</h4>
+                <div class="configurar">
+                <ol>
+                    <li><label for="nivelSonidoGeneral">Nivel General: </label>
+                        <input type="range" id="nivelSonidoGeneral" name="nivelSonidoGeneral" min="0" max="10">
+                    </li>
+                    <li><label for="nivelSonidoAlertas">Nivel Efectos: </label>
+                        <input type="range" id="nivelSonidoAlertas" name="nivelSonidoAlertas" min="0" max="10">
+                    </li>
+                </ol></div>
+            </div>
+                <div class="tamaño">
+                <h4>Tamaño Letras: </h4>
+                <div class="configurar">
+                <ol>
+                    <li><label for="nivelLetras">Tamaño de las Letras: </label>
+                        <input type="range" id="nivelLetras" name="nivelLetras" min="0" max="10">
+                    </li>
+                </ol></div>
+            </div>
+                <div class="color">
+                <h4>Color: </h4>
+                <div class="configurar">
+                <ul>
+                    <li><label for="colorCorrecto"> Letra Correcta:</label>
+                        <input type="color" id="colorCorrecto" name="colorCorrecto" value="#02fc18">
+                    </li>
+                    <li><label for="colorIncorrecto"> Letra Incorrecta</label>
+                        <input type="color" id="colorIncorrecto" name="colorIncorrecto" value="#fc2b02">
+                    </li>
+                </ul>
+                <ul>
+                    <li><label for="colorTabla"> Elige el color de la tabla:</label>
+                        <input type="color" id="colorTabla" name="colorTabla" value="#02fc20">
+                    </li>
+                </ul></div>
+            </div>
+                <div class="modo">
+                <br><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round">Modo daltónico</span>
+                </label></div>
+                <br><input type="hidden" name="id_configuracion" value="12345">
+            </fieldset>
+
+            <br>
+            <p>¿Desea conservar los cambios realizados?</p> <br>
+                <input type="submit" value="Confirmar"><br>
+            <input type="reset" value="Restablecer">
+        </form>
+    </main>
+
+    <footer><!--Se han puesto el instagram y facebook de ambas pero ninguna de las dos tenemos twitter-->
+        <br><a href="https://www.instagram.com/?next=%2F"><img
+                src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="20"
+                width="20">meikoale</a>
+        <a href="https://www.facebook.com/pablo.contento.710"><img src="../Multimedia/Imagenes/redes/Facebook_Logo.png"
+                alt="Not Found ING" height="20" width="20">pablo.contento</a>
+        <br><i><b>Teléfono: </b>971 55 14 89</i>
+        <br><i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez</a> &amp; <a
+                href="mailto:pcontento743@alumnes.politecnicllevant.cat">PContento</a></i>
+        <br><i><b>Dirección: </b>Carrer ses Tapareres, 32, 07500 Manacor, Illes Balears</i>
+        <br><img src="../Multimedia/Imagenes/favicon.ico" alt="No se ha encontrado el logo"><b><a
+                href="../Usuario/wordSearch.html">Word Search, sopa de letras</a></b>
+    </footer>
+</body>
+
+</html>
