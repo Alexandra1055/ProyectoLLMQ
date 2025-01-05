@@ -2,7 +2,7 @@
     font-family: eb_garamond_bold;
     src: url(../../Multimedia/static/EBGaramond-Bold.ttf);
 }
-
+/*aqui definimos el model de cajas alternativo que usaran todas las paginas, ya que todas comparten este mismo css*/
 * {
     box-sizing: border-box;
     margin: 0;

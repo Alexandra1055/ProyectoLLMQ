@@ -22,20 +22,3 @@ main div img {
     opacity: 0.5;
     z-index: 1;
 }
-
-#audio {
-    position: fixed;
-    bottom: 20px; 
-    right: 20px; 
-    width: 150px;
-    z-index: 10;
-}
-
-video, iframe {
-    display: inline-block;
-    margin: 5%;
-    max-width: 30%;
-    height: 30%;
-    padding: 0.5em;
-    margin-left: 9rem;
-}

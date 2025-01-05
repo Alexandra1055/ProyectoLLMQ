@@ -28,7 +28,7 @@ section {
 }
 
 
-section>p{
+section>p, section>h4{
     background-color: white;
     padding: 1rem;
     margin-left: 10%;
@@ -41,6 +41,12 @@ section a {
     text-decoration: none;
     color: #10316bc2;
     font-weight: bold;
+  
+}
+
+section img{
+    width: auto; 
+    max-width: 50%;
 }
 
 section > article:hover {
