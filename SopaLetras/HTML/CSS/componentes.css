@@ -1,0 +1,87 @@
+/* Botones */
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--usuario-secondary);
+  background-color: var(--usuario-primary);
+  color: var(--usuario-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: var(--usuario-secondary);
+  color: var(--usuario-primary);
+}
+
+
+/* Listas */
+ul,
+ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/*Multimedia*/
+#audio {
+  position: fixed;
+  bottom: 50px;
+  width: 150px;
+  z-index: 10;
+}
+
+iframe {
+  display: inline-block;
+  margin: 5%;
+  max-width: 30%;
+  height: 30%;
+  padding: 0.5em;
+  margin-left: 9rem;
+}
+
+@media (min-width: 720px) {
+
+  /*Multimedia*/
+  #audio {
+    position: fixed;
+    bottom: 20px;
+    width: 150px;
+    z-index: 10;
+  }
+
+  iframe {
+    display: inline-block;
+    margin: 5%;
+    max-width: 30%;
+    height: 30%;
+    padding: 0.5em;
+    margin-left: 9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /*Multimedia*/
+  #audio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    z-index: 10;
+  }
+
+  iframe {
+    display: inline-block;
+    margin: 5%;
+    max-width: 30%;
+    height: 30%;
+    padding: 0.5em;
+    margin-left: 9rem;
+  }
+
+}
