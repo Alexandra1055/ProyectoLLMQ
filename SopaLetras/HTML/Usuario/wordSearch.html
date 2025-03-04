@@ -27,27 +27,34 @@
             </video>
         </div>
         <header>
-            <div class="menu_header">
+            
+            
                 <div class="menu_nav">
-                    <a href="./wordSearch.html" class="logo">
-                        <img src="../Multimedia/Imagenes/logo2.PNG" alt="Logo" height="80" width="80">
-                    </a>
-
-                    <nav>
+                    <div class="menu_header">
+                        <div class="logo">
+                        <a href="./wordSearch.html">
+                            <img src="../Multimedia/Imagenes/logo2.PNG" alt="Logo" height="80" width="80">
+                        </a>
+                    </div>
+                    <div class="sidebar">
+                        <a href="#mySidebar" class="sidebar-abrir-boton">☰</a>                    </div>
+                    <div id="overlay"></div>
+                    <div class="sidebar-nav" id="mySidebar">
+                        <a href="#" class="sidebar-cerrar-boton">&times;</a>
                         <ul>
-                            <li class="nav-principal"><a href="./wordSearch.html">Inicio</a>
+                            <li><a href="./wordSearch.html">Inicio</a>
                                 <ul>
                                     <li><a href="./registro_usuario.html">Registrarse</a></li>
                                     <li><a href="./solicitud_admin.html">Solicitud Admin</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-principal"><a href="./juego.html">Juego</a>
+                            <li><a href="./juego.html">Juego</a>
                                 <ul>
                                     <li><a href="./consultar_puntuacion.html">Mi puntuación</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-principal"><a href="./ayuda_usuario.html">Ayuda</a></li>
-                            <li class="nav-principal"><a href="./otro_contenido.html">Otros</a>
+                            <li><a href="./ayuda_usuario.html">Ayuda</a></li>
+                            <li><a href="./otro_contenido.html">Otros</a>
                                 <ul>
                                     <li><a href="./contacto.html">Contacto</a></li>
                                     <li><a href="./mapa.html">Mapa</a></li>
@@ -56,16 +63,25 @@
                                 </ul>
                             </li>
                         </ul>
-                    </nav>
-
-                    <div id="logout">
-                        <a href="../Administrador/admin_wordSearch.html">Área Privada</a>
-                        <button>
-                            <a href="wordSearch.html">Logout <img src="../Multimedia/Imagenes/logout.png" alt="Logout"
-                                    width="15" height="15"></a>
-                        </button>
                     </div>
+                    <script>
+                        function w3_open() {
+                            document.getElementById("mySidebar").style.display = "block";
+                        }
+                        function w3_close() {
+                            document.getElementById("mySidebar").style.display = "none";
+                        }
+                    </script>
+
                 </div>
+                <div id="logout">
+                    <a href="../Administrador/admin_wordSearch.html">Área Privada</a>
+                    <button>
+                        <a href="wordSearch.html">Logout <img src="../Multimedia/Imagenes/logout.png" alt="Logout"
+                                width="15" height="15"></a>
+                    </button>
+                </div>
+
                 <aside id="aside-menu">
                     <img src="../Multimedia/Imagenes/ranking.png.png" alt="" width="100" height="100">
                     <div>
@@ -139,34 +155,11 @@
                                 inmateriales que provee a los jugadores...</i></p>
                     </div>
                 </article>
-                <article class="articulo3">
-                    <div class="articulo">
-                        <h5>El origen y la historia de las Sopa de Letras</h5>
-                        <a href="https://www.wordsearch365.com/es/estrategias/historia-de-las-sopa-de-letras"
-                            target="_blank"><img src="../Multimedia/Imagenes/Imagen_indice.png" alt="Not Found IMG"
-                                height="200" width="200"></a>
-                        <i>La historia de las Sopa de Letras está envuelta en muchas incertidumbres, pero algo
-                            sorprendente
-                            está
-                            bien
-                            claro: es un juego todavía muy joven...</i>
-                    </div>
-                </article>
-                <article class="articulo4">
-                    <div class="articulo">
-                        <h5>10 beneficios de jugar a Sopa de Letras</h5>
-                        <a href="https://www.wordsearch365.com/es/estrategias/beneficios-jugar-sopa-de-letras"
-                            target="_blank"><img src="../Multimedia/Imagenes/beneficios-jugar-sopa-de-letras.jpg"
-                                alt="Not Found IMG" height="200" width="200"></a>
-                        <p><i>Mucho del éxito de las Sopas de Letras puede ser explicado por la combinación de
-                                entretenimiento y
-                                plusvalías
-                                inmateriales que provee a los jugadores...</i></p>
-                    </div>
-                </article>
-                <p>Para estar al día de todos nuestros avances, podeis acceder a nuestro apartado de:
-                    <a href="./noticias.html"> Noticias</a>
-                </p>
+                <div class="ulima_noticia">
+                    <p>Para estar al día de todos nuestros avances, podeis acceder a nuestro apartado de:
+                        <a href="./noticias.html"> Noticias</a>
+                    </p>
+                </div>
             </section>
         </main>
         <footer>

@@ -11,7 +11,6 @@ main form {
     border-radius: 8px;
     padding: 1rem;
     width: 90%;
-    max-width: 400px;
     box-shadow: 0 4px 8px black;
     text-align: center;
     display: flex;
@@ -20,6 +19,7 @@ main form {
 
 .login {
     width: 80%;
+    max-width: 400px;
 }
 
 .login form {
@@ -82,23 +82,26 @@ main form a:hover {
 
 /* Tablet: Formularios */
 @media (min-width: 720px) {
+    main{
+        padding: 1.5em;
+        align-items: center;
+    }
 
     main form .formulario {
-        max-width: 50%;
+        max-width: 70%;
     }
 
     .login {
         margin-right: 5%;
         justify-content: center;
         align-items: center;
-        width: 250px;
+        width: 350px;
         margin: 1em;
 
     }
 
     .login form {
         width: 100%;
-        max-width: 250px;
     }
 }
 
@@ -110,7 +113,6 @@ main form a:hover {
         margin-right: 5%;
         justify-content: center;
         align-items: center;
-        width: 550px;
     }
 
     .login form {

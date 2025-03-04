@@ -10,6 +10,7 @@ section {
     width: 100%;
     padding: 1rem;
     margin: 1em;
+    border-radius: 7px;
 }
 
 .noticias_inicio article {
@@ -21,6 +22,7 @@ section {
 .noticias_inicio img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
 section article {
@@ -28,20 +30,43 @@ section article {
     grid-template-columns: 1fr;
     align-items: center;
     gap: 1em;
+    border-radius: 7px;
+    transition: transform 0.3s ease-in-out;
 }
 
 article .articulo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    margin: 2em;
 }
+
 
 section article:hover {
     background-color: var(--usuario-bg-dark);
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.672); 
 }
+
 
 /*Tablet*/
 @media (min-width: 720px) {
+
+
+    section article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section h4, .ulima_noticia {
+        grid-column: span 2;
+    }
+
+
+}
+
+/*Ordenador*/
+@media (min-width: 1024px) {
 
 
     section {
@@ -54,20 +79,6 @@ section article:hover {
         gap: 1em;
     }
 
-    section article {
-        display: flex;
-        flex-direction: column;
-    }
-
-    section h4 {
-        grid-column: span 2;
-    }
-
-
-}
-
-/*Ordenador*/
-@media (min-width: 1024px) {
 
     section article {
         display: grid;
