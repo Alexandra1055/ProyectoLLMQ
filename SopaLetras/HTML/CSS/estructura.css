@@ -13,16 +13,16 @@ footer {
 /*Header*/
 header .menu_header {
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
 
-header .logo{
+header .logo {
   display: flex;
   justify-content: flex-start;
 }
 
-header .menu_nav{
+header .menu_nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -30,19 +30,20 @@ header .menu_nav{
   gap: 0.2em;
 }
 
-header .menu_nav .sidebar-nav{
+header .menu_nav .sidebar-nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
 .sidebar-nav {
   position: fixed;
   top: 0;
-  left: -100%; /* Inicialmente oculto */
-  width: 70%;
+  right: -90%;
+  width: 40%;
   height: 100%;
   background-color: var(--usuario-primary);
-  transition: left 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
   z-index: 1000;
   padding: 1rem;
   display: flex;
@@ -51,24 +52,9 @@ header .menu_nav .sidebar-nav{
 }
 
 #mySidebar:target {
-  left: 0;
+  right: 0;
 }
 
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  visibility: hidden;
-  transition: background 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-#mySidebar:target ~ #overlay {
-  background: rgba(0, 0, 0, 0.5);
-  visibility: visible;
-}
 
 .sidebar-cerrar-boton {
   font-size: 2rem;
@@ -84,43 +70,37 @@ header .menu_nav .sidebar-nav{
   color: var(--usuario-secondary);
   cursor: pointer;
 }
-
-header nav ul {
-  display: flex;
+.sidebar-nav ul {
   list-style: none;
-  gap: 2em;
+  padding: 0;
 }
 
-header .sidebar-nav ul li {
-  display: flex;
+.sidebar-nav ul li {
   position: relative;
-  padding: 0.2em;
-  text-align: center;
-}
-
-header .sidebar-nav ul li ul {
-  display: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  position: absolute;
-  top: 100%;
-  background-color: var(--usuario-primary);
-  list-style: none;
-  z-index: 3;
   padding: 0.5rem;
 }
 
+.sidebar-nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 60px;
+  background-color: var(--usuario-primary);
+  border-radius: 5px;
+  padding: 0.5rem;
+  list-style: none;
+  min-width: 150px;
+}
+
+.sidebar-nav ul li:hover > ul {
+  display: block;
+}
 header #logout {
   display: flex;
   justify-content: center;
   gap: 1.5em;
   align-items: center;
 }
-
-header nav ul li:hover>ul {
-  display: block;
-  border-radius: 10px;
-}
-
 
 /*Aside*/
 #aside-menu {
@@ -135,7 +115,7 @@ header nav ul li:hover>ul {
   border-radius: 10px;
 }
 
-#aside-menu div{
+#aside-menu div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -160,11 +140,14 @@ header nav ul li:hover>ul {
 main {
   width: 100%;
   height: auto;
-  padding: 1rem;
+  padding: 1rem; 
 }
 
 /*Footer*/
 footer {
   text-align: center;
   display: grid;
+  position: static;
+  bottom: 0; 
+  margin-top: auto; 
 }

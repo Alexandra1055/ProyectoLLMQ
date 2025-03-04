@@ -5,10 +5,11 @@
   padding: 0;
 }
 
-body {
+body, html{
   font-family: 'eb_garamond_bold', sans-serif;
   color: var(--usuario-secondary);
   width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
