@@ -1,24 +1,23 @@
-main div img {
-    max-width: 100%;
-    height: auto;
+body{
+    position: relative;
 }
 
-.imagen_fondo {
+.imagen_fondo video{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.imagen_fondo img {
-    position: fixed;
+.capa{
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background: #1c1c1d;
     opacity: 0.5;
-    z-index: 1;
+    mix-blend-mode: overlay;
 }

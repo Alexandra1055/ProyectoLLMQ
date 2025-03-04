@@ -1,0 +1,148 @@
+/* Header y Footer */
+header,
+footer {
+  width: 100%;
+  background-color: var(--usuario-primary);
+  color: var(--usuario-secondary);
+  padding: 0.5rem;
+  align-items: center;
+  display: flex;
+}
+
+/*Header*/
+header .menu_header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header .menu_nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+header .menu_nav nav{
+  width: 50%;
+}
+
+header nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  gap: 2em;
+}
+
+header nav ul li {
+  display: flex;
+  position: relative;
+  padding: 0.2em;
+  text-align: center;
+}
+
+header nav ul li ul {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 100%;
+  background-color: var(--usuario-primary);
+  list-style: none;
+  z-index: 3;
+  padding: 0.5rem;
+}
+
+header #logout {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+
+header nav ul li:hover>ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  border-radius: 10px;
+}
+
+nav ul li:hover {
+  color: var(--usuario-hover-text);
+}
+
+header nav ul li:hover>ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  top: 100%;
+  background-color: var(--usuario-primary);
+  list-style: none;
+  z-index: 3;
+  padding: 0.5rem;
+}
+
+/*Aside*/
+header aside #aside-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.6rem;
+  width: 3rem;
+  height: 4em;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 50%;
+}
+
+#aside-menu h5,
+#aside-menu ul {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#aside-menu{
+
+  padding: 0.2em;
+  height: auto;
+  width: 7em;
+}
+
+#aside-menu img {
+  margin: auto;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#aside-menu:hover {
+  width: 8rem;
+  height: auto;
+  background: var(--usuario-hover);
+  border-radius: 10px;
+}
+
+#aside-menu:hover img {
+  transform: translateY(-5px);
+}
+
+#aside-menu:hover h5,
+#aside-menu:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 1em;
+}
+
+/* Main principal, cada elemento tiene retoques en este campo*/
+main {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  display: grid;
+}

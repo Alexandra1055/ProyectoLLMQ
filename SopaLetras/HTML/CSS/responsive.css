@@ -1,0 +1,99 @@
+/* Tablet */
+@media (min-width: 720px) {
+ 
+    header .menu_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+      header .menu_nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+    
+      header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 0.5em;
+      }
+    
+      header #logout {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+
+    #aside-menu {
+        background-color: var(--usuario-secondary);
+        position: fixed;
+        padding: 0.5rem;
+        width: 5rem;
+        top: 25%;
+        right: 5rem;
+        height: 4rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+
+    #aside-menu:hover {
+        width: 8rem;
+        height: auto;
+        background: var(--usuario-secondary);
+    }
+
+    #aside-menu img {
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    #aside-menu h5 {
+        font-size: 0.9rem;
+        color: var(--usuario-bg-dark);
+        text-align: center;
+    }
+
+    #aside-menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #aside-menu ul li a {
+        text-decoration: none;
+        color: var(--usuario-bg-dark);
+    }
+
+
+    #aside-menu ul li a:hover {
+        background-color: var(--usuario-bg-light);
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/*Ordenador*/
+@media (min-width: 1024px) {
+
+      header nav ul {
+        gap: 2em;
+      }
+
+}
+
