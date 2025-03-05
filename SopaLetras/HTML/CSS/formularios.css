@@ -1,17 +1,16 @@
-main {
-    display: grid;
-    justify-items: center;
-}
 
 main form {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1.5rem;
-    width: 90%;
     box-shadow: 0 4px 8px rgb(156, 156, 156);
     text-align: center;
+}
+
+.inicio-sesion-usuario, .formulario{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -55,12 +54,20 @@ main form textarea {
     resize: vertical;
 }
 
-main form input[type="submit"] {
+main form input[type="submit"], main form input[type="reset"] {
     padding: 0.8rem 1rem;
     font-size: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+body main form input[type="submit"]:hover{
+    color: #7ed13a;
+}
+
+body main form input[type="reset"]:hover {
+    color: #f84c1d;
 }
 
 main form a {
@@ -77,14 +84,13 @@ main form a {
     color: var(--usuario-primary);
 }
 
-.user main form input[type="submit"] {
+.user main form input[type="submit"], .user main form input[type="reset"] {
     background-color: var(--usuario-primary);
     color: var(--usuario-secondary);
 }
 
-.user main form input[type="submit"]:hover {
+.user main form input[type="submit"]:hover, .user main form input[type="reset"]:hover {
     background-color: var(--usuario-hover);
-    color: var(--usuario-hover-text);
 }
 
 .user main form a{ 
@@ -103,12 +109,12 @@ main form a {
     color: var(--admin-primary);
 }
 
-.admin main form input[type="submit"] {
+.admin main form input[type="submit"], main form input[type="reset"]  {
     background-color: var(--admin-primary);
     color: var(--admin-secondary);
 }
 
-.admin main form input[type="submit"]:hover {
+.admin main form input[type="submit"]:hover, main form input[type="reset"]:hover {
     background-color: var(--admin-hover);
     color: var(--admin-hover-text);
 }
@@ -130,10 +136,9 @@ main form a {
     }
 
     .login {
-        margin-right: 5%;
         justify-content: center;
         align-items: center;
-        width: 250px;
+        width: 350px;
         max-width: 400px;
     }
 
@@ -146,6 +151,11 @@ main form a {
 /* Ordenador: Formularios */
 @media (min-width: 1024px) {
 
+    .inicio-sesion-usuario{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
 
     .login {
         width: 90%;
@@ -155,19 +165,29 @@ main form a {
         height: 80%;
     }
 
-    main form .formulario {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        max-width: 70%;
+    main .formulario form{
+        width: 50%;
     }
 
-    main form fieldset .formulario {
-        grid-column: span 2;
+    main .formulario .estructura-form{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+        padding: 1em;
     }
-
-    .form-column1,
+    
+    .form-column1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 45%;
+    }
+    
     .form-column2 {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 45%;
     }
 }
