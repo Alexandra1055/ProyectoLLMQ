@@ -52,7 +52,6 @@
     position: absolute;
     top: 70%;
     left: 10px;
-    background-color: var(--usuario-primary);
     border-radius: 5px;
     padding: 0.5rem;
     list-style: none;
@@ -61,7 +60,6 @@
 
 
   #aside-menu {
-    background-color: var(--usuario-secondary);
     position: fixed;
     padding: 0.5rem;
     width: 5rem;
@@ -78,7 +76,6 @@
   #aside-menu:hover {
     width: 8rem;
     height: auto;
-    background: var(--usuario-secondary);
   }
 
   #aside-menu img {
@@ -89,7 +86,6 @@
 
   #aside-menu h5 {
     font-size: 0.9rem;
-    color: var(--usuario-bg-dark);
     text-align: center;
   }
 
@@ -100,16 +96,6 @@
     flex-direction: column;
   }
 
-
-  #aside-menu ul li a {
-    text-decoration: none;
-    color: var(--usuario-bg-dark);
-  }
-
-
-  #aside-menu ul li a:hover {
-    background-color: var(--usuario-bg-light);
-  }
 
   main {
     grid-template-columns: repeat(2, 1fr);

@@ -3,18 +3,32 @@ button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
-  border: 2px solid var(--usuario-secondary);
-  background-color: var(--usuario-primary);
-  color: var(--usuario-secondary);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-button:hover {
+/*Colores User -botones*/
+.user button{
+  border: 2px solid var(--usuario-secondary);
+  background-color: var(--usuario-primary);
+  color: var(--usuario-secondary);
+}
+.user button:hover {
   background-color: var(--usuario-secondary);
   color: var(--usuario-primary);
+}
+
+/*Colores Admin -botones*/
+.admin button{
+  border: 2px solid var(--admin-secondary);
+  background-color: var(--admin-primary);
+  color: var(--admin-secondary);
+}
+.admin button:hover {
+  background-color: var(--admin-secondary);
+  color: var(--admin-primary);
 }
 
 

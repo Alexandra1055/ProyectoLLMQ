@@ -4,7 +4,6 @@ main {
 }
 
 main form {
-    background-color: var(--usuario-bg-light);
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1.5rem;
@@ -34,9 +33,9 @@ main form fieldset {
 main form legend {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--usuario-primary);
     margin-bottom: 1rem;
 }
+
 
 main form input[type="text"],
 main form input[type="password"],
@@ -59,26 +58,69 @@ main form textarea {
 main form input[type="submit"] {
     padding: 0.8rem 1rem;
     font-size: 1rem;
-    background-color: var(--usuario-primary);
-    color: var(--usuario-secondary);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-main form input[type="submit"]:hover {
+main form a {
+    text-decoration: none;
+}
+
+
+/*Colores User*/
+
+.user main form{
+    background-color: var(--usuario-bg-light);
+}
+.user main form legend{
+    color: var(--usuario-primary);
+}
+
+.user main form input[type="submit"] {
+    background-color: var(--usuario-primary);
+    color: var(--usuario-secondary);
+}
+
+.user main form input[type="submit"]:hover {
     background-color: var(--usuario-hover);
     color: var(--usuario-hover-text);
 }
 
-main form a {
-    text-decoration: none;
+.user main form a{ 
     color: var(--usuario-hover);
 }
 
-main form a:hover {
+.user main form a:hover {
     color: var(--usuario-primary);
 }
+
+/*Colores Admin*/
+.admin main form{
+    background-color: var(--admin-bg-light);
+}
+.admin main form legend{
+    color: var(--admin-primary);
+}
+
+.admin main form input[type="submit"] {
+    background-color: var(--admin-primary);
+    color: var(--admin-secondary);
+}
+
+.admin main form input[type="submit"]:hover {
+    background-color: var(--admin-hover);
+    color: var(--admin-hover-text);
+}
+
+.admin main form a{ 
+    color: var(--admin-hover);
+}
+
+.admin main form a:hover {
+    color: var(--admin-primary);
+}
+
 
 /* Tablet: Formularios */
 @media (min-width: 720px) {

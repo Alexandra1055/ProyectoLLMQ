@@ -16,7 +16,6 @@ section {
 }
 
 .noticias_inicio article, .noticias_inicio div {
-    background-color: var(--usuario-primary);
     width: 100%;
     height: 100%;
     display: flex;
@@ -26,6 +25,7 @@ section {
     border-radius: 7px;
     transition: transform 0.3s ease-in-out;
 }
+
 .noticias_inicio img {
     max-width: 100%;
     height: auto;
@@ -46,7 +46,15 @@ article .articulo {
     cursor: pointer;
 }
 
+/*Colores User*/
+.user .noticias_inicio article,.user .noticias_inicio div {
+    background-color: var(--usuario-primary);
+} 
 
+/*Colores Admin*/
+.admin .noticias_inicio article,.admin .noticias_inicio div {
+    background-color: var(--admin-primary);
+} 
 
 /*Tablet*/
 @media (min-width: 720px) {
