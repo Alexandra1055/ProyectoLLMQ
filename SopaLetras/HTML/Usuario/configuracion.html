@@ -5,7 +5,7 @@
     <title>Sopa de Letras: Configuracion</title>
     <meta charset="UTF-8">
     <meta name="description" content="Pagina para realizar los cambios oportunos en las sopas o las paginas">
-    <meta name="author" content="Alexandra y Pablo">
+    <meta name="author" content="Alexandra, Pau y Paulo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/estructura.css">
     <link rel="stylesheet" href="../CSS/base.css">
@@ -21,10 +21,7 @@
 <body class="user">
     <div class="contenedor_imagen_fondo">
         <div class="imagen_fondo">
-            <video autoplay loop muted playsinline>
-                <source src="../Multimedia/Videos/12.mp4" type="video/mp4">
-                Tu navegador no soporta el video.
-            </video>
+           
         </div>
         <header>
             
@@ -97,7 +94,6 @@
             </div>
         </header>
     <main><!--configuración del juego, posible modo oscuro mas adelante-->
-        <div class="imagen_fondo"><img src="../Multimedia/Imagenes/sopa-de-letras.webp" alt=""></div>
         <form action="procesar_configuracion.php" method="post" target="_blank" autocomplete="on">
             <fieldset>
                 <legend>Configuración de la página:</legend>
@@ -157,33 +153,39 @@
                 </ul></div>
             </div>
                 <div class="modo">
-                <br><label class="switch">
+                <label class="switch">
                     <input type="checkbox">
                     <span class="slider round">Modo daltónico</span>
                 </label></div>
-                <br><input type="hidden" name="id_configuracion" value="12345">
+                <input type="hidden" name="id_configuracion" value="12345">
             </fieldset>
 
-            <br>
-            <p>¿Desea conservar los cambios realizados?</p> <br>
-                <input type="submit" value="Confirmar"><br>
+            
+            <p>¿Desea conservar los cambios realizados?</p> 
+                <input type="submit" value="Confirmar">
             <input type="reset" value="Restablecer">
         </form>
     </main>
 
-    <footer><!--Se han puesto el instagram y facebook de ambas pero ninguna de las dos tenemos twitter-->
-        <br><a href="https://www.instagram.com/?next=%2F"><img
-                src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="20"
-                width="20">meikoale</a>
-        <a href="https://www.facebook.com/pablo.contento.710"><img src="../Multimedia/Imagenes/redes/Facebook_Logo.png"
-                alt="Not Found ING" height="20" width="20">pablo.contento</a>
-        <br><i><b>Teléfono: </b>971 55 14 89</i>
-        <br><i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez</a> &amp; <a
-                href="mailto:pcontento743@alumnes.politecnicllevant.cat">PContento</a></i>
-        <br><i><b>Dirección: </b>Carrer ses Tapareres, 32, 07500 Manacor, Illes Balears</i>
-        <br><img src="../Multimedia/Imagenes/favicon.ico" alt="No se ha encontrado el logo"><b><a
-                href="../Usuario/wordSearch.html">Word Search, sopa de letras</a></b>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/?next=%2F"><img
+                    src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="30"
+                    width="30"></a>
+            <a href="https://www.facebook.com/pablo.contento.710"><img
+                    src="../Multimedia/Imagenes/redes/Facebook_Logo.png" alt="Not Found ING" height="30"
+                    width="30"></a>
+        </div>
+        <div class="contenido-footer">
+            <i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez,</a> <a
+                    href="mailto:pescanellas925@alumnes.politecnicllevant.cat ">PEscanellas </a><a
+                    href="mailto:pfebrer408@alumnes.politecnicllevant.cat ">&amp; PFebrer</a></i>
+            <b><a href="../Usuario/wordSearch.html"><img src="../Multimedia/Imagenes/favicon.ico"
+                        alt="No se ha encontrado el logo" height="20" width="20">Word Search, sopa de letras</a></b>
+        </div>
     </footer>
+
+</div>
 </body>
 
 </html>

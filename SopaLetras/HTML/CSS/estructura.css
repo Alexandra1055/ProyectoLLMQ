@@ -6,6 +6,11 @@ footer {
   align-items: center;
   display: flex;
   justify-content: center;
+  z-index: 1000;
+}
+
+header{
+  top: 0;
 }
 
 /*Header*/
@@ -13,6 +18,7 @@ header .menu_header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 6em;
 }
 
 header .logo {
@@ -80,7 +86,7 @@ header .menu_nav .sidebar-nav {
 .sidebar-nav ul li ul {
   display: none;
   position: absolute;
-  top: 10%;
+  top: 7%;
   left: 60px;
   border-radius: 5px;
   padding: 0.5rem;
@@ -91,6 +97,7 @@ header .menu_nav .sidebar-nav {
 .sidebar-nav ul li:hover > ul {
   display: block;
 }
+
 header #logout {
   display: flex;
   justify-content: center;
@@ -107,16 +114,23 @@ header #logout {
   padding: 0.6rem;
   margin-top: 0.5em;
   border-radius: 10px;
+  justify-content: center;
 }
 
 #aside-menu div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+}
+#aside-menu ul{
+  display: flex;
+  flex-direction: row;
+
 }
 
 #aside-menu h5,
-#aside-menu ul {
+#aside-menu ul a{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -134,16 +148,27 @@ header #logout {
 main {
   width: 100%;
   height: auto;
-  padding: 1rem; 
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1rem;  
+  overflow-y: auto;
 }
 
 /*Footer*/
 footer {
   text-align: center;
-  display: grid;
-  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   bottom: 0; 
   margin-top: auto; 
+  width: 100%;
+}
+
+footer div{
+  display: flex;
+  gap: 1em;
+  align-items: flex-end;
 }
 
 /*Colores User*/
@@ -156,9 +181,17 @@ footer {
   color: var(--usuario-secondary);
   background-color: var(--usuario-primary);
 }
+.user .sidebar-nav ul li ul {
+  background-color: var(--usuario-primary);
+
+}
 
 .user #aside-menu{
   background: var(--usuario-secondary);
+  color: var(--usuario-primary);
+}
+
+.user #aside-menu a{
   color: var(--usuario-primary);
 }
 
@@ -168,9 +201,13 @@ footer {
   color: var(--admin-secondary);
 }
 
-.admin .sidebar-nav{
+.admin .sidebar-nav, .admin .sidebar-nav a{
   color: var(--admin-secondary);
   background-color: var(--admin-primary);
+}
+.admin .sidebar-nav ul li ul {
+  background-color: var(--admin-primary);
+
 }
 
 .admin #aside-menu{

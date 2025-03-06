@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nickname = $_POST["nickname"];
     echo "El nick de usuario introducido es: " . $nickname;
     
-    echo "<br>";
+    echo "";
 
     $contrasena = $_POST["contrasena"];
     $longitud_contrasena = strlen($contrasena);
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     echo "La contraseña introducida es: " . $contrasena_oculta;
 
-    echo "<br>";
+    echo "";
 
     $contrasena_rep = $_POST["contrasenaRepetida"];
     if ($contrasena == $contrasena_rep) {
@@ -24,42 +24,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Las contraseñas no coinciden.";
     }
 
-    echo "<br>";
+    echo "
 
     $nombre = $_POST["nombre"];
     echo "El nombre introducido es: " . $nombre;
 
-    echo "<br>";
+    echo "";
 
     $apellido1 = $_POST["apellido1"];
     echo "El primer apellido introducido es: " . $apellido1;
 
-    echo "<br>";
+    echo "";
 
     $apellido2 = $_POST["apellido2"];
     echo "El segundo apellido introducido es: " . ($apellido2 ? $apellido2 : "No se ha introducido");
 
-    echo "<br>";
+    echo "";
 
     $correo_electronico = $_POST["correo_electronico"];
     echo "El correo electrónico introducido es: " . $correo_electronico;
 
-    echo "<br>";
+    echo "";
 
     $fecha_nacimiento = $_POST["fecha_naixament"];
     echo "La fecha de nacimiento introducida es: " . $fecha_nacimiento;
 
-    echo "<br>";
+    echo "";
 
     $pais = $_POST["pais"];
     echo "El país seleccionado es: " . $pais;
 
-    echo "<br>";
+    echo "";
 
     $CCAA = $_POST["CCAA"];
     echo "La comunidad autónoma seleccionada es: " . $CCAA;
 
-    echo "<br>";
+    echo "";
 
     if (isset($_POST["politica_privacidad"])) {
         echo "Se ha aceptado la política de privacidad.";

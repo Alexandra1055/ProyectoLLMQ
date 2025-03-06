@@ -1,52 +1,36 @@
 /* Artículos */
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.noticias_inicio {
-    width: 100%;
-    padding: 1rem;
-    margin: 1em;
-    border-radius: 7px;
-    gap: 2em;
-    display: flex;
-    flex-direction: column;
-}
-
-.noticias_inicio article, .noticias_inicio div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1em;
-    border-radius: 7px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.noticias_inicio img {
-    max-width: 100%;
-    height: auto;
+    justify-items: center;
 }
 
 article .articulo {
+    display: grid;
+    margin: 2em;
+    height: 100%;
+}
+
+.articulo .contenido-articulo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em;
+    justify-content: space-around;
+    padding: 2em;
+    height: 80%;
 }
 
-.admin .articulo:hover , .user .articulo:hover {
+.admin .articulo:hover, .user .articulo:hover {
     background-color: #081a38;
     box-shadow: 2px 10px rgba(22, 22, 22, 0.185);
     transform: scale(1.05);
     cursor: pointer;
 }
 
+
 /*Colores User*/
-.user .noticias_inicio article,.user .noticias_inicio div {
+.user .articulo,.user .ultima_noticia {
     background-color: var(--usuario-primary);
     color: var(--usuario-secondary);
 } 
@@ -55,47 +39,3 @@ article .articulo {
 .admin .noticias_inicio article,.admin .noticias_inicio div {
     background-color: var(--admin-primary);
 } 
-
-/*Tablet*/
-@media (min-width: 720px) {
-
-    section article {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .noticias_inicio{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    section h4, .ulima_noticia {
-        grid-column: span 2;
-    }
-
-}
-
-/*Ordenador*/
-@media (min-width: 1024px) {
-
-    section {
-        width: 70%;
-        display: grid;
-        grid-template-columns: repeat(minmax(250px, 1fr));
-        justify-items: center;
-        margin: 1em;
-        gap: 1em;
-    }
-
-    section article {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        gap: 1em;
-    }
-
-    .noticias_inicio{
-        margin-left: 5em;
-    }
-
-}

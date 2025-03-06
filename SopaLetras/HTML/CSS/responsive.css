@@ -1,5 +1,10 @@
 /* Tablet */
 @media (min-width: 720px) {
+  header{
+    position: fixed;
+    top: 0;
+  }
+
   header .menu_header {
     display: flex;
     align-items: center;
@@ -12,25 +17,21 @@
     justify-content: flex-start;
   }
 
-  /* Sidebar centrado */
   .menu_nav {
     display: flex;
     flex: 1;
   }
 
-  /* Logout a la izquierda */
   header #logout {
     display: flex;
     justify-content: flex-end;
   }
 
-  /* Ocultar botones de abrir/cerrar sidebar */
   .sidebar-abrir-boton,
   .sidebar-cerrar-boton {
     display: none;
   }
 
-  /* Sidebar en línea */
   .sidebar-nav {
     position: static;
     width: auto;
@@ -51,7 +52,7 @@
     display: none;
     position: absolute;
     top: 70%;
-    left: 10px;
+    left: -5px;
     border-radius: 5px;
     padding: 0.5rem;
     list-style: none;
@@ -62,14 +63,14 @@
   #aside-menu {
     position: fixed;
     padding: 0.5rem;
-    width: 5rem;
+    width: 6rem;
     top: 25%;
-    right: 5rem;
-    height: 4rem;
+    right: 3rem;
+    height: 5rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    z-index: 10;
+    z-index: 100;
   }
 
 
@@ -94,6 +95,10 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+  }
+
+  footer{
+    position: fixed;
   }
 
 }
