@@ -7,19 +7,22 @@ main form {
     text-align: center;
 }
 
- .formulario{
+.formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.login {
+.login, .loginadmin {
     padding: 1em;
     width: 80%;
 }
-
-.login form {
+.contenidormain{
+    display: flex;
+    justify-content: center;
+}
+.login form, .loginadmin form {
     width: 100%;
 }
 
@@ -47,6 +50,7 @@ main form textarea {
     border-radius: 4px;
     font-size: 0.9rem;
     box-sizing: border-box;
+    margin: 0.5rem;
 }
 
 main form textarea {
@@ -136,10 +140,18 @@ main form a {
 @media (min-width: 720px) {
 
     main form .formulario {
-        max-width: 50%;
+        max-width: 60%;
+        
     }
-
-    .login {
+    .formulario{
+        margin-top: 8rem;
+        margin-bottom: 3.7rem;
+        
+    }
+    .contenidormain{
+        margin-top:2.5rem;
+    }
+    .login, .loginadmin {
         align-items: center;
         width: 350px;
         max-width: 400px;
@@ -148,6 +160,7 @@ main form a {
     .login form {
         width: 100%;
         height: auto;
+        margin-top: 4.5rem;
     }
 }
 
@@ -155,7 +168,7 @@ main form a {
 @media (min-width: 1024px) {
 
     main .formulario form{
-        width: 50%;
+        width: 80%;
     }
 
     main .formulario .estructura-form{
@@ -165,7 +178,15 @@ main form a {
         gap: 2em;
         padding: 1em;
     }
-    
+    .formulario{
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+    }
+    .loginadmin {
+        align-items: center;
+        width: 550px;
+        max-width: 800px;
+    }
     .form-column1 {
         display: flex;
         flex-direction: column;

@@ -94,35 +94,37 @@
             </div>
         </header>
     <main><!--contactar con administración mandando un formulario-->
-        <form action="procesar_contacto.php" method="post" target="_blank" autocomplete="on">
-            <fieldset>
-                <legend>
-                    <h3>Contacta con nosotros: </h3>
-                </legend>
-                <label for="nick">Nick Usuario*:</label>
-                <input type="text" name="nickname" id="nick" placeholder="Introduce tu nickname" required
-                    autofocus>
-                <label for="correo">Correo electronico*:</label>
-                <input type="email" name="correo_electronico" id="correo" placeholder="Introduce tu correo" required>
-
-                <label for="consultas">Tipo de consulta:</label>
-                <select id="consultas" name="tipoconsulta">
-                    <option value="Consulta"> Consulta </option>
-                    <option value="Error"> Error </option>
-                    <option value="Mejora"> Mejora </option>
-                    <option value="Suscribirse"> Suscribirse </option>
-                </select>
-
-                <p><label for="descripcioConsulta">Descripcion de la consulta:</label></p>
-                <textarea id="descripcioConsulta" name="dscrConsulta" rows="4" cols="50" maxlength="500"
-                placeholder="Escriba una breve descripcion de su consulta" required></textarea>
-                
-
-                <input type="hidden" name="id_consulta" value="12345">
-            </fieldset>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Restablecer">
-        </form>
+        <div class="formulario">
+            <form action="procesar_contacto.php" method="post" target="_blank" autocomplete="on">
+                <fieldset>
+                    <legend>
+                        <h3>Contacta con nosotros: </h3>
+                    </legend>
+                    <label for="nick">Nick Usuario*:</label>
+                    <input type="text" name="nickname" id="nick" placeholder="Introduce tu nickname" required
+                        autofocus>
+                    <label for="correo">Correo electronico*:</label>
+                    <input type="email" name="correo_electronico" id="correo" placeholder="Introduce tu correo" required>
+    
+                    <label for="consultas">Tipo de consulta:</label>
+                    <select id="consultas" name="tipoconsulta">
+                        <option value="Consulta"> Consulta </option>
+                        <option value="Error"> Error </option>
+                        <option value="Mejora"> Mejora </option>
+                        <option value="Suscribirse"> Suscribirse </option>
+                    </select>
+    
+                    <p><label for="descripcioConsulta">Descripcion de la consulta:</label></p>
+                    <textarea id="descripcioConsulta" name="dscrConsulta" rows="4" cols="50" maxlength="500"
+                    placeholder="Escriba una breve descripcion de su consulta" required></textarea>
+                    
+    
+                    <input type="hidden" name="id_consulta" value="12345">
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </form>
+        </div>
     </main>
     <footer>
         <div class="redes-sociales">

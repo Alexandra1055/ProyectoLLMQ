@@ -147,7 +147,7 @@ header #logout {
 /* Main principal, cada elemento tiene retoques en este campo*/
 main {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 1rem;  

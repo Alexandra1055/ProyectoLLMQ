@@ -97,7 +97,11 @@
     flex-direction: column;
   }
 
+
   footer{
+    position: static;
+  }
+  .footer-iniciouser{
     position: fixed;
   }
 

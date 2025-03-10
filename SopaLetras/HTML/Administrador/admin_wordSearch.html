@@ -29,27 +29,30 @@
         </div>
     </header>
     <main>
-        <form action="procesar_wordSerach_Admin.php" method="post" target="_blank" autocomplete="on">
-            <fieldset>
-                <legend>
-                    <h4>Iniciar Sesión Admin&#128081;</h4>
-                </legend>
-
-                <label for="nick"></label>
-                <input type="text" name="nickname" id="nick" placeholder="Nombre de Usuario" required autofocus>
-                <label for="contrasena"></label>
-                <input type="password" name="contrasena" id="contrasena" placeholder="Introduce tu contraseña"
-                    required>
-
-            </fieldset>
-            <input type="submit" value="Iniciar">
-            <p>
-                <a href="../Usuario/contacto.html">Recuperar contraseña</a>
-                ¿Quieres ser administrador? Rellena el Formulario de <a href="../Usuario/solicitud_admin.html">Solicitud
-                    Administración</a>
-            </p>
-        </form>
-    
+        <div class="contenidormain">
+            <div class="loginadmin">
+                <form action="procesar_wordSerach_Admin.php" method="post" target="_blank" autocomplete="on">
+                    <fieldset>
+                        <legend>
+                            <h4>Iniciar Sesión Admin&#128081;</h4>
+                        </legend>
+        
+                        <label for="nick"></label>
+                        <input type="text" name="nickname" id="nick" placeholder="Nombre de Usuario" required autofocus>
+                        <label for="contrasena"></label>
+                        <input type="password" name="contrasena" id="contrasena" placeholder="Introduce tu contraseña"
+                            required>
+        
+                    </fieldset>
+                    <input type="submit" value="Iniciar">
+                    <p>
+                        <a href="../Usuario/contacto.html">Recuperar contraseña</a>
+                        ¿Quieres ser administrador? Rellena el Formulario de <a href="../Usuario/solicitud_admin.html">Solicitud
+                            Administración</a>
+                    </p>
+                </form>
+            </div>
+        </div>   
     </main>
     <footer>
         <div class="redes-sociales">

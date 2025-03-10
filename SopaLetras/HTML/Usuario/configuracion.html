@@ -94,77 +94,79 @@
             </div>
         </header>
     <main><!--configuración del juego, posible modo oscuro mas adelante-->
-        <form action="procesar_configuracion.php" method="post" target="_blank" autocomplete="on">
-            <fieldset>
-                <legend>Configuración de la página:</legend>
-                <div class="idioma">
-                <h4>Idioma:</h4>
+        <div class="formulario">
+            <form action="procesar_configuracion.php" method="post" target="_blank" autocomplete="on">
+                <fieldset>
+                    <legend>Configuración de la página:</legend>
+                    <div class="idioma">
+                    <h4>Idioma:</h4>
+                    
+                    <div class="configurar">
+                    <ol>
+                        <li>
+                            <label for="idioma">Seleccione su Idioma:</label>
+                            <select name="idioma" id="idioma">
+                                <option value="castellano"> Castellano </option>
+                                <option value="catalan"> Catalán </option>
+                                <option value="ingles"> Ingles </option>
+                                <option value="portugues"> Portugues </option>
+                                <option value="aleman"> Alemán </option>
+                            </select>
+                        </li>
+                    </ol></div>
+                </div>
+                    <div class="sonido">
+                    <h4>Sonido:</h4>
+                    <div class="configurar">
+                    <ol>
+                        <li><label for="nivelSonidoGeneral">Nivel General: </label>
+                            <input type="range" id="nivelSonidoGeneral" name="nivelSonidoGeneral" min="0" max="10">
+                        </li>
+                        <li><label for="nivelSonidoAlertas">Nivel Efectos: </label>
+                            <input type="range" id="nivelSonidoAlertas" name="nivelSonidoAlertas" min="0" max="10">
+                        </li>
+                    </ol></div>
+                </div>
+                    <div class="tamaño">
+                    <h4>Tamaño Letras: </h4>
+                    <div class="configurar">
+                    <ol>
+                        <li><label for="nivelLetras">Tamaño de las Letras: </label>
+                            <input type="range" id="nivelLetras" name="nivelLetras" min="0" max="10">
+                        </li>
+                    </ol></div>
+                </div>
+                    <div class="color">
+                    <h4>Color: </h4>
+                    <div class="configurar">
+                    <ul>
+                        <li><label for="colorCorrecto"> Letra Correcta:</label>
+                            <input type="color" id="colorCorrecto" name="colorCorrecto" value="#02fc18">
+                        </li>
+                        <li><label for="colorIncorrecto"> Letra Incorrecta</label>
+                            <input type="color" id="colorIncorrecto" name="colorIncorrecto" value="#fc2b02">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><label for="colorTabla"> Elige el color de la tabla:</label>
+                            <input type="color" id="colorTabla" name="colorTabla" value="#02fc20">
+                        </li>
+                    </ul></div>
+                </div>
+                    <div class="modo">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round">Modo daltónico</span>
+                    </label></div>
+                    <input type="hidden" name="id_configuracion" value="12345">
+                </fieldset>
+    
                 
-                <div class="configurar">
-                <ol>
-                    <li>
-                        <label for="idioma">Seleccione su Idioma:</label>
-                        <select name="idioma" id="idioma">
-                            <option value="castellano"> Castellano </option>
-                            <option value="catalan"> Catalán </option>
-                            <option value="ingles"> Ingles </option>
-                            <option value="portugues"> Portugues </option>
-                            <option value="aleman"> Alemán </option>
-                        </select>
-                    </li>
-                </ol></div>
-            </div>
-                <div class="sonido">
-                <h4>Sonido:</h4>
-                <div class="configurar">
-                <ol>
-                    <li><label for="nivelSonidoGeneral">Nivel General: </label>
-                        <input type="range" id="nivelSonidoGeneral" name="nivelSonidoGeneral" min="0" max="10">
-                    </li>
-                    <li><label for="nivelSonidoAlertas">Nivel Efectos: </label>
-                        <input type="range" id="nivelSonidoAlertas" name="nivelSonidoAlertas" min="0" max="10">
-                    </li>
-                </ol></div>
-            </div>
-                <div class="tamaño">
-                <h4>Tamaño Letras: </h4>
-                <div class="configurar">
-                <ol>
-                    <li><label for="nivelLetras">Tamaño de las Letras: </label>
-                        <input type="range" id="nivelLetras" name="nivelLetras" min="0" max="10">
-                    </li>
-                </ol></div>
-            </div>
-                <div class="color">
-                <h4>Color: </h4>
-                <div class="configurar">
-                <ul>
-                    <li><label for="colorCorrecto"> Letra Correcta:</label>
-                        <input type="color" id="colorCorrecto" name="colorCorrecto" value="#02fc18">
-                    </li>
-                    <li><label for="colorIncorrecto"> Letra Incorrecta</label>
-                        <input type="color" id="colorIncorrecto" name="colorIncorrecto" value="#fc2b02">
-                    </li>
-                </ul>
-                <ul>
-                    <li><label for="colorTabla"> Elige el color de la tabla:</label>
-                        <input type="color" id="colorTabla" name="colorTabla" value="#02fc20">
-                    </li>
-                </ul></div>
-            </div>
-                <div class="modo">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round">Modo daltónico</span>
-                </label></div>
-                <input type="hidden" name="id_configuracion" value="12345">
-            </fieldset>
-
-            
-            <p>¿Desea conservar los cambios realizados?</p> 
-                <input type="submit" value="Confirmar">
-            <input type="reset" value="Restablecer">
-        </form>
+                <p>¿Desea conservar los cambios realizados?</p> 
+                    <input type="submit" value="Confirmar">
+                <input type="reset" value="Restablecer">
+            </form>
+        </div>
     </main>
 
     <footer>

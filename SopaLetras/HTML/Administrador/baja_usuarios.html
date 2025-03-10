@@ -73,23 +73,25 @@
     </header>
     <main> <!--Ahora esta metido a mano, despues se pondran por tabla de usuarios
         En este menu puedes seleccionar a más de un usuario usando el Ctrl-->
-        <form action="procesar_bajaUsuario_Admin.php" method="post">
-            <label for="usuarios">Selecciona un usuario:</label>
-            <select id="usuarios" name="usuarios" multiple size="5">
-                <option value="usuario1">Usuario 1</option>
-                <option value="usuario2">Usuario 2</option>
-                <option value="usuario3">Usuario 3</option>
-                <option value="usuario4">Usuario 4</option>
-                <option value="usuario4">Usuario 5</option>
-                <option value="usuario4">Usuario 6</option>
-                <option value="usuario4">Usuario 7</option>
-                <option value="usuario4">Usuario 8</option>
-                <option value="usuario4">Usuario 9</option>
-
-            </select>
-            
-            <button type="submit">Eliminar</button>
-        </form>
+        <div class="formulario">
+            <form action="procesar_bajaUsuario_Admin.php" method="post">
+                <label for="usuarios">Selecciona un usuario:</label>
+                <select id="usuarios" name="usuarios" multiple size="5">
+                    <option value="usuario1">Usuario 1</option>
+                    <option value="usuario2">Usuario 2</option>
+                    <option value="usuario3">Usuario 3</option>
+                    <option value="usuario4">Usuario 4</option>
+                    <option value="usuario4">Usuario 5</option>
+                    <option value="usuario4">Usuario 6</option>
+                    <option value="usuario4">Usuario 7</option>
+                    <option value="usuario4">Usuario 8</option>
+                    <option value="usuario4">Usuario 9</option>
+    
+                </select>
+                
+                <button type="submit">Eliminar</button>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="redes-sociales">
