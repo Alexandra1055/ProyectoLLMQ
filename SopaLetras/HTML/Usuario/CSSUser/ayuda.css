@@ -3,16 +3,37 @@
     src: url(../../Multimedia/static/EBGaramond-BoldItalic.ttf);
 }
 
-.texto-ayuda{
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-ayuda {
     font-family: eb_garamond_boldIt;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 2rem 2rem;
-    border-radius: 10px;
+    background: #eeeae2;
+    padding: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 70%;
+    width: 85%;
     text-align: justify;
-    margin: 2rem 8rem 2rem 8rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border: 2px solid #cca858;
     display: inline-block;
+}
+
+.videos video, iframe {
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6rem;
+        justify-items: center;
+    }
+
 }
