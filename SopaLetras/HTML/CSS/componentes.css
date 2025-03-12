@@ -51,14 +51,16 @@ ol {
   gap: 8px;
   background-color: var(--usuario-bg-light, #f3f3f3);
   padding: 0.5rem;
-  max-width: 100%;  
+  max-width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: 3px 2px 5px var(--usuario-primary);
 }
 
 .Llistausuaris > ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: contents; /* Permite que los <li> se comporten como elementos de la cuadrícula */
+  display: contents; 
 }
 
 .Llistausuaris li {
