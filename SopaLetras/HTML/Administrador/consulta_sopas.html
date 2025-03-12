@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../CSS/imagen-fondo.css">
     <link rel="stylesheet" href="../CSS/formularios.css">
     <link rel="stylesheet" href="../CSS/articulos.css">
+    <link rel="stylesheet" href="../CSS/juego.css">
     <link rel="icon" type="image/x-icon" href="../Multimedia/Imagenes/favicon.ico">
 </head>
 
@@ -73,6 +74,7 @@
     </header>
     <main>
         <h3>Consultar Sopas de Letras</h3>
+        <div class="formulario"></div>
         <form action="porcesar_consultarSopa_Admin.php" method="post">
             <label for="tipoSopa"><b>Selecciona una sopa:</b></label>
             <select id="tipoSopa" name="tipoSopa">
@@ -82,7 +84,7 @@
                     <option value="dificil:sopa_1">Nivel Difícil: Sopa 1</option>
                 </optgroup>
             </select>
-            
+
             <button type="submit">Consultar</button>
 
         </form>
@@ -105,128 +107,48 @@
             </ul>
         </div>
 
-        <table>
-            <tr>
-                <td>O</td>
-                <td>S</td>
-                <td>O</td>
-                <td>T</td>
-                <td>G</td>
-                <td>L</td>
-                <td>O</td>
-                <td>P</td>
-                <td>M</td>
-                <td>N</td>
-            </tr>
-            <tr>
-                <td>A</td>
-                <td>P</td>
-                <td>A</td>
-                <td>N</td>
-                <td>D</td>
-                <td>A</td>
-                <td>F</td>
-                <td>R</td>
-                <td>I</td>
-                <td>C</td>
-            </tr>
-            <tr>
-                <td>P</td>
-                <td>U</td>
-                <td>L</td>
-                <td>O</td>
-                <td>R</td>
-                <td>O</td>
-                <td>H</td>
-                <td>B</td>
-                <td>X</td>
-                <td>T</td>
-            </tr>
-            <tr>
-                <td>L</td>
-                <td>O</td>
-                <td>B</td>
-                <td>O</td>
-                <td>E</td>
-                <td>S</td>
-                <td>T</td>
-                <td>R</td>
-                <td>S</td>
-                <td>L</td>
-            </tr>
-            <tr>
-                <td>P</td>
-                <td>E</td>
-                <td>R</td>
-                <td>R</td>
-                <td>O</td>
-                <td>T</td>
-                <td>I</td>
-                <td>G</td>
-                <td>R</td>
-                <td>E</td>
-            </tr>
-            <tr>
-                <td>T</td>
-                <td>I</td>
-                <td>G</td>
-                <td>R</td>
-                <td>E</td>
-                <td>F</td>
-                <td>E</td>
-                <td>K</td>
-                <td>A</td>
-                <td>E</td>
-            </tr>
-            <tr>
-                <td>M</td>
-                <td>O</td>
-                <td>S</td>
-                <td>C</td>
-                <td>A</td>
-                <td>K</td>
-                <td>W</td>
-                <td>O</td>
-                <td>R</td>
-                <td>S</td>
-            </tr>
-            <tr>
-                <td>L</td>
-                <td>E</td>
-                <td>O</td>
-                <td>N</td>
-                <td>R</td>
-                <td>E</td>
-                <td>O</td>
-                <td>H</td>
-                <td>L</td>
-                <td>T</td>
-            </tr>
-            <tr>
-                <td>L</td>
-                <td>G</td>
-                <td>A</td>
-                <td>T</td>
-                <td>O</td>
-                <td>P</td>
-                <td>M</td>
-                <td>A</td>
-                <td>P</td>
-                <td>D</td>
-            </tr>
-            <tr>
-                <td>F</td>
-                <td>E</td>
-                <td>S</td>
-                <td>H</td>
-                <td>Y</td>
-                <td>L</td>
-                <td>Q</td>
-                <td>E</td>
-                <td>Z</td>
-                <td>X</td>
-            </tr>
-        </table>
+        <div class="juego-sopa">
+            <button class="b-sopa">O</button><button class="b-sopa">S</button><button class="b-sopa">O</button><button
+                class="b-sopa">T</button><button class="b-sopa">G</button><button class="b-sopa">L</button><button
+                class="b-sopa">O</button><button class="b-sopa">P</button><button class="b-sopa">M</button><button
+                class="b-sopa">N</button>
+            <button class="b-sopa">A</button><button class="b-sopa">P</button><button class="b-sopa">A</button><button
+                class="b-sopa">N</button><button class="b-sopa">D</button><button class="b-sopa">A</button><button
+                class="b-sopa">F</button><button class="b-sopa">R</button><button class="b-sopa">I</button><button
+                class="b-sopa">C</button>
+            <button class="b-sopa">P</button><button class="b-sopa">U</button><button class="b-sopa">L</button><button
+                class="b-sopa">O</button><button class="b-sopa">R</button><button class="b-sopa">O</button><button
+                class="b-sopa">H</button><button class="b-sopa">B</button><button class="b-sopa">X</button><button
+                class="b-sopa">T</button>
+            <button class="b-sopa">L</button><button class="b-sopa">O</button><button class="b-sopa">B</button><button
+                class="b-sopa">O</button><button class="b-sopa">E</button><button class="b-sopa">S</button><button
+                class="b-sopa">T</button><button class="b-sopa">R</button><button class="b-sopa">S</button><button
+                class="b-sopa">L</button>
+            <button class="b-sopa">P</button><button class="b-sopa">E</button><button class="b-sopa">R</button><button
+                class="b-sopa">R</button><button class="b-sopa">O</button><button class="b-sopa">T</button><button
+                class="b-sopa">I</button><button class="b-sopa">G</button><button class="b-sopa">R</button><button
+                class="b-sopa">E</button>
+            <button class="b-sopa">T</button><button class="b-sopa">I</button><button class="b-sopa">G</button><button
+                class="b-sopa">R</button><button class="b-sopa">E</button><button class="b-sopa">F</button><button
+                class="b-sopa">E</button><button class="b-sopa">K</button><button class="b-sopa">A</button><button
+                class="b-sopa">E</button>
+            <button class="b-sopa">M</button><button class="b-sopa">O</button><button class="b-sopa">S</button><button
+                class="b-sopa">C</button><button class="b-sopa">A</button><button class="b-sopa">K</button><button
+                class="b-sopa">W</button><button class="b-sopa">O</button><button class="b-sopa">R</button><button
+                class="b-sopa">S</button>
+            <button class="b-sopa">L</button><button class="b-sopa">E</button><button class="b-sopa">O</button><button
+                class="b-sopa">N</button><button class="b-sopa">R</button><button class="b-sopa">E</button><button
+                class="b-sopa">O</button><button class="b-sopa">H</button><button class="b-sopa">L</button><button
+                class="b-sopa">T</button>
+            <button class="b-sopa">L</button><button class="b-sopa">G</button><button class="b-sopa">A</button><button
+                class="b-sopa">T</button><button class="b-sopa">O</button><button class="b-sopa">P</button><button
+                class="b-sopa">M</button><button class="b-sopa">A</button><button class="b-sopa">P</button><button
+                class="b-sopa">D</button>
+            <button class="b-sopa">F</button><button class="b-sopa">E</button><button class="b-sopa">S</button><button
+                class="b-sopa">H</button><button class="b-sopa">Y</button><button class="b-sopa">L</button><button
+                class="b-sopa">Q</button><button class="b-sopa">E</button><button class="b-sopa">Z</button><button
+                class="b-sopa">X</button>
+        </div>
     </main>
     <footer>
         <div class="redes-sociales">
@@ -234,8 +156,7 @@
                     src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="30"
                     width="30"></a>
             <a href="https://www.facebook.com/pablo.contento.710"><img
-                    src="../Multimedia/Imagenes/redes/Facebook_Logo.png" alt="Not Found ING" height="30"
-                    width="30"></a>
+                    src="../Multimedia/Imagenes/redes/Facebook_Logo.png" alt="Not Found ING" height="30" width="30"></a>
         </div>
         <div class="contenido-footer">
             <i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez,</a> <a
@@ -246,7 +167,7 @@
         </div>
     </footer>
 
-</div>
+    </div>
 </body>
 
 </html>

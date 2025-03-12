@@ -1,6 +1,97 @@
 .juego-sopa{
-display: grid;
-grid-template-columns: repeat(10, 1fr);
-gap: 5px;
-width: fit-content;
-}
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    width: fit-content;
+    margin: auto;
+    }
+    
+    #fin{
+        margin: 0.5rem auto;
+    }
+    
+    main h3{
+        margin-top: -1rem;
+    }
+    
+    main select, form button{
+        margin-top: 0.5rem;
+    }
+    
+    main h2, main .info-tiempo-resultado{
+        margin: 1rem 0 0.5rem 0;
+    }
+    
+    .info-tiempo-resultado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .listado-palabras {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .listado-palabras ul {
+        display: contents;
+    }
+    
+    .listado-palabras li {
+        list-style: none;
+        background: #f2f2f2;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+    }
+
+    @media (min-width: 720px) and (max-width: 1024px){
+        
+        main{
+            margin-top: 10rem;
+        }
+
+        #fin{
+            margin-bottom: 5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+    
+        main h3{
+            margin-top: 5rem;
+        }
+    
+        .info-tiempo-resultado {
+            display: flex;
+            flex-direction: row; 
+            gap: 10px;
+            justify-content: left;
+        }
+    
+        .listado-palabras {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, auto);
+            gap: 1rem;
+            margin: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .listado-juego, .letras{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            margin: 1.5rem;
+        }
+
+        #fin{
+            grid-column: 2/-1;
+        }
+    }

@@ -35,7 +35,6 @@ button {
   color: var(--admin-primary);
 }
 
-
 /* Listas */
 ul,
 ol {
@@ -54,6 +53,26 @@ ol {
   max-width: 100%;
   border-radius: 0.2rem;
   box-shadow: 3px 2px 5px var(--usuario-primary);
+}
+/*Listas consulta_ranking*/
+.ranking ol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  list-style: none;
+}
+
+.ranking li {
+  background-color: var(--admin-bg-dark);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.ranking li:nth-child(even) {
+  background-color: var(--admin-bg-light);
+  color: black;
 }
 
 .Llistausuaris > ul {
@@ -117,6 +136,15 @@ iframe {
   border-radius: 1rem;
 }
 
+.estrellas {
+  text-align: center;
+}
+
+.estrellas img{
+  height: 15rem;
+  width: 25rem;
+}
+
 @media (min-width: 720px) {
 
   /*Multimedia*/
@@ -160,6 +188,10 @@ iframe {
   .Llistausuaris li:nth-child(8) { grid-column-start: 3; grid-row-start: 2; }
   .Llistausuaris li:nth-child(9) { grid-column-start: 4; grid-row-start: 2;}
   .Llistausuaris li:nth-child(10) { grid-column-start: 5; grid-row-start: 2;}
+
+  .estrellas img{
+    margin-top: 5rem;
+  }
 }
 
 @media (min-width: 1024px) {
