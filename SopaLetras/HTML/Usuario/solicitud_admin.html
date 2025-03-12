@@ -72,11 +72,15 @@
 
                 </div>
                 <div id="logout">
-                    <a href="../Administrador/admin_wordSearch.html">Área Privada</a>
-                    <button>
-                        <a href="wordSearch.html">Logout <img src="../Multimedia/Imagenes/logout.png" alt="Logout"
-                                width="15" height="15"></a>
-                    </button>
+                    <div>
+                        <a href="../Administrador/admin_wordSearch.html">Área Privada</a>
+                    </div>
+                    <div>
+                        <button>
+                            <a href="wordSearch.html">Logout <img src="../Multimedia/Imagenes/logout.png" alt="Logout"
+                                    width="15" height="15"></a>
+                        </button>
+                    </div>
                 </div>
 
                 <aside id="aside-menu">
@@ -103,37 +107,44 @@
                         <p><i>Recuerda que solo pueden optar a administrador los Usuarios registrados. Rellene todos los
                                 campos
                                 indicados con (*) ya que son obligatorios para poder aceptar su solicitud.</i></p>
-                        <div class="form-column1">
-                            <label for="nick">Nick Usuario*:</label>
-                            <input type="text" name="nickname" id="nick" placeholder="Introduce tu nickname" required
-                                autofocus>
 
-                            <label for="nombre">Nombre*:</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" required>
+                        <div class="estructura-form">
+                            <div class="form-column1">
+                                <label for="nick">Nick Usuario*:</label>
+                                <input type="text" name="nickname" id="nick" placeholder="Introduce tu nickname"
+                                    required autofocus>
 
-                            <label for="correo">Correo electronico*:</label>
-                            <input type="email" name="correo_electronico" id="correo" placeholder="Introduce tu correo"
-                                required>
+                                <label for="nombre">Nombre*:</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" required>
+
+                                <label for="correo">Correo electronico*:</label>
+                                <input type="email" name="correo_electronico" id="correo"
+                                    placeholder="Introduce tu correo" required>
+                            </div>
+                            <div class="form-column2">
+                                <label for="lli1">Apellido 1*:</label>
+                                <input type="text" name="apellido1" id="lli1" placeholder="Introduce tu primer apellido"
+                                    required>
+
+                                <label for="lli2">Apellido 2:</label>
+                                <input type="text" name="apellido2" id="lli2"
+                                    placeholder="Introduce tu segundo apellido">
+
+                                <label for="fechanacimiento">Fecha de nacimiento*:</label>
+                                <input type="date" name="fecha_naixament" id="fechanacimiento" required>
+
+
+                                <input type="hidden" name="id_solicitud_admin" value="12345">
+
+                            </div>
+                            <div class="descripcioConsulta">
+                                <label for="descripcioConsulta">¿Porque desea ser administrador?:</label>
+
+                                <textarea id="descripcioConsulta" name="dscrConsulta" rows="4" cols="50" maxlength="500"
+                                    placeholder="Descripcion breve de sus cualidades" required></textarea>
+
+                            </div>
                         </div>
-                        <div class="form-column2">
-                            <label for="lli1">Apellido 1*:</label>
-                            <input type="text" name="apellido1" id="lli1" placeholder="Introduce tu primer apellido"
-                                required>
-
-                            <label for="lli2">Apellido 2:</label>
-                            <input type="text" name="apellido2" id="lli2" placeholder="Introduce tu segundo apellido">
-
-                            <label for="fechanacimiento">Fecha de nacimiento*:</label>
-                            <input type="date" name="fecha_naixament" id="fechanacimiento" required>
-
-
-                            <input type="hidden" name="id_solicitud_admin" value="12345">
-                        </div>
-                        <label for="descripcioConsulta">¿Porque desea ser administrador?:</label>
-                        <textarea id="descripcioConsulta" name="dscrConsulta" rows="4" cols="50" maxlength="500"
-                            placeholder="Descripcion breve de sus cualidades" required></textarea>
-
-                        </label>
                     </fieldset>
                     <input type="submit" value="Enviar">
 
@@ -142,26 +153,26 @@
                         <p><a href="./wordSearch.html">Iniciar como invitado</a></p>
                         <p>¿Ya tienes cuenta? <a href="./wordSearch.html">Inicia sesión</a></p>
                     </div>
-                </form>
             </div>
-        </main>
-        <footer>
-            <div class="redes-sociales">
-                <a href="https://www.instagram.com/?next=%2F"><img
-                        src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="30"
-                        width="30"></a>
-                <a href="https://www.facebook.com/pablo.contento.710"><img
-                        src="../Multimedia/Imagenes/redes/Facebook_Logo.png" alt="Not Found ING" height="30"
-                        width="30"></a>
-            </div>
-            <div class="contenido-footer">
-                <i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez,</a> <a
-                        href="mailto:pescanellas925@alumnes.politecnicllevant.cat ">PEscanellas </a><a
-                        href="mailto:pfebrer408@alumnes.politecnicllevant.cat ">&amp; PFebrer</a></i>
-                <b><a href="../Usuario/wordSearch.html"><img src="../Multimedia/Imagenes/favicon.ico"
-                            alt="No se ha encontrado el logo" height="20" width="20">Word Search, sopa de letras</a></b>
-            </div>
-        </footer>
+            </form>
+    </div>
+    </main>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/?next=%2F"><img
+                    src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="30"
+                    width="30"></a>
+            <a href="https://www.facebook.com/pablo.contento.710"><img
+                    src="../Multimedia/Imagenes/redes/Facebook_Logo.png" alt="Not Found ING" height="30" width="30"></a>
+        </div>
+        <div class="contenido-footer">
+            <i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez,</a> <a
+                    href="mailto:pescanellas925@alumnes.politecnicllevant.cat ">PEscanellas </a><a
+                    href="mailto:pfebrer408@alumnes.politecnicllevant.cat ">&amp; PFebrer</a></i>
+            <b><a href="../Usuario/wordSearch.html"><img src="../Multimedia/Imagenes/favicon.ico"
+                        alt="No se ha encontrado el logo" height="20" width="20">Word Search, sopa de letras</a></b>
+        </div>
+    </footer>
 
     </div>
 </body>

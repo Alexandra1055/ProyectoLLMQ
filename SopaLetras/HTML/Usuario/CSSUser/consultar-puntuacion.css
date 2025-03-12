@@ -35,7 +35,7 @@ main {
     background-color: rgb(230, 230, 230);
 }
 
-@media (min-width: 720px) and (max-width: 1024px){
+@media (min-width: 720px){
     
     .puntuacion ul{
         grid-template-columns: repeat(2, 1fr);

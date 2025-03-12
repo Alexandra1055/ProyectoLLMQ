@@ -101,8 +101,8 @@ header .menu_nav .sidebar-nav {
 header #logout {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
-  align-items: center;
+  align-items: baseline;
+  gap: 1em;
 }
 
 /*Aside*/

@@ -22,11 +22,6 @@
     flex: 1;
   }
 
-  header #logout {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .sidebar-abrir-boton,
   .sidebar-cerrar-boton {
     display: none;

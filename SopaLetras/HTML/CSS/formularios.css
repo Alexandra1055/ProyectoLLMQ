@@ -14,6 +14,16 @@ main form {
     justify-content: center;
     margin-bottom: 1rem;
 }
+.estructura-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column1,.form-column2,.descripcioConsulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .login, .loginadmin {
     padding: 1em;
@@ -45,7 +55,7 @@ main form input[type="email"],
 main form select,
 main form input[type="date"],
 main form textarea {
-    width: 100%;
+    width: 70%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -169,13 +179,12 @@ main form a {
 @media (min-width: 1024px) {
 
     main .formulario form{
-        width: 80%;
+        width: 70%;
     }
 
     main .formulario .estructura-form{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 2em;
         padding: 1em;
     }
@@ -188,17 +197,11 @@ main form a {
         width: 550px;
         max-width: 800px;
     }
-    .form-column1 {
-        display: flex;
-        flex-direction: column;
+    .form-column1,.form-column2 {
         gap: 0.5em;
-        width: 100%;
+        width: 48%;
     }
-    
-    .form-column2 {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
+    .descripcioConsulta{
         width: 100%;
     }
 }
