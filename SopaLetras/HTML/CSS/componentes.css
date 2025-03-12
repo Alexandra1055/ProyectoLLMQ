@@ -31,7 +31,6 @@ button {
   color: var(--admin-primary);
 }
 
-
 /* Listas */
 ul,
 ol {
@@ -39,6 +38,26 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+/*Listas consulta_ranking*/
+.ranking ol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  list-style: none;
+}
+
+.ranking li {
+  background-color: var(--admin-bg-dark);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.ranking li:nth-child(even) {
+  background-color: var(--admin-bg-light);
+  color: black;
 }
 
 /*Multimedia*/
@@ -58,6 +77,15 @@ iframe {
   margin-left: 9rem;
 }
 
+.estrellas {
+  text-align: center;
+}
+
+.estrellas img{
+  height: 15rem;
+  width: 25rem;
+}
+
 @media (min-width: 720px) {
 
   /*Multimedia*/
@@ -75,6 +103,10 @@ iframe {
     height: 30%;
     padding: 0.5em;
     margin-left: 9rem;
+  }
+
+  .estrellas img{
+    margin-top: 5rem;
   }
 }
 
