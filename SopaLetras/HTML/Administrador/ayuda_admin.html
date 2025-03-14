@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="../CSS/componentes.css">
     <link rel="stylesheet" href="../CSS/responsive.css">
     <link rel="stylesheet" href="../CSS/variables.css">
-    <link rel="stylesheet" href="../CSS/imagen-fondo.css">
-    <link rel="stylesheet" href="../CSS/formularios.css">
-    <link rel="stylesheet" href="../CSS/articulos.css">
+    <link rel="stylesheet" href="../CSS/bento2.css">
     <link rel="icon" type="image/x-icon" href="../Multimedia/Imagenes/favicon.ico">
 </head>
 
@@ -75,41 +73,78 @@
         </div>
     </header>
     <main>
-        <div class="texto-ayuda">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a viverra sapien. Donec vestibulum, urna sit
-                amet gravida tempor, tellus sem consectetur diam, vitae gravida ante nunc vitae odio. Maecenas sit amet
-                ornare tellus. Quisque fermentum et nulla id rhoncus. In hac habitasse platea dictumst. Pellentesque
-                tempus leo lectus, at finibus dui scelerisque non. Vivamus suscipit mi eu vestibulum consectetur.
-                Phasellus vitae augue dui. Nulla pulvinar vitae diam vel rutrum. Mauris sit amet lacinia arcu. Sed
-                volutpat semper nisl, sit amet iaculis eros dignissim ac.</p>
+        <div class="contenido-ayuda">
+            <div class="apartado1">
+                <h1>Origen e historia</h1>
+                <p>Se trata de una adaptación hecha específicamente para Ludoteka del popular juego de sopa de
+                    letras, de manera que puedan enfrentarse varios jugadores entre sí en vez de jugarse en
+                    solitario.</p>
+            </div>
+            <div class="apartado2">
+                <h1>Descripción</h1>
+                <p>El juego consiste en un tablero lleno de letras distribuidas en filas y columnas. Algunas de
+                    las filas, columnas o diagonales que forman las letras sobre el tablero dan lugar a palabras
+                    sobre un tema común planteado. Estas palabras pueden ser leídas tanto del derecho como del
+                    revés. Se juega por turnos, como todos los juegos de wordSearch.com.</p>
+            </div>
+            <div class="apartado3">
+                <h1>Desarrollo del juego</h1>
+            </div>
+            <div class="apartado4">
+                <h3>Inicio del juego</h3>
+                <p>Al inicio de la partida el programa expone un tablero de sopa de letras mostrando el tema
+                    sobre el que versan las palabras que hay que encontrar en la misma.
 
-            <p>Etiam feugiat libero euismod lacus dignissim malesuada. Sed ullamcorper sem eget mattis vulputate. Mauris
-                eget vestibulum orci. Vestibulum velit turpis, finibus vel ultricies sed, maximus at nibh. Nullam mollis
-                sodales tincidunt. Nam nunc nisl, aliquam dapibus accumsan eu, sagittis id nulla. Duis et ornare metus,
-                eu feugiat metus. Praesent in pretium felis, lobortis blandit ipsum. Aliquam ac metus varius,
-                scelerisque dui eu, maximus nulla.</p>
+                    Se decide al azar el orden de los turnos de los jugadores.</p>
+            </div>
+            <div class="apartado5">
+                <h3>Marcar las jugadas por turno</h3>
+                <p>En su turno cada jugador debe marcar una secuencia de letras en horizontal, en vertical o en
+                    diagonal, tanto leídas de atrás hacia delante como de delante hacia atrás. Si la secuencia
+                    de letras constituye efectivamente una de las palabras escondidas en la sopa de letras,
+                    computará un acierto.
+                    Las palabras deben marcarse haciendo click en la primera o última letra y arrastrando el
+                    puntero del ratón hasta el otro extremo de la palabra.
 
-            <p>Praesent risus nisi, dictum eu molestie ut, porta a justo. Sed quis turpis metus. Fusce elementum est in
-                enim dignissim, venenatis euismod dui iaculis. Nam lobortis odio ut posuere consectetur. Nunc eget
-                tortor augue. Etiam dapibus vehicula tristique. Aliquam sit amet justo id ante viverra ornare ut varius
-                velit. Aliquam dignissim leo sed ipsum rhoncus, quis malesuada magna lacinia. Nulla semper quam sed erat
-                interdum hendrerit. Vestibulum commodo porta turpis in faucibus. Suspendisse potenti. Vestibulum et orci
-                purus. Vestibulum id ante mollis, ullamcorper felis lacinia, fermentum erat. Praesent tempor quam id
-                nisl tempor mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc vitae sapien
-                rutrum, condimentum urna eget, placerat mi.
-            </p>
+                    Tanto si la secuencia de letras constituye una palabra de las de la sopa de letras como si
+                    es una secuencia de letras no válida, una vez que el programa lo ha verificado y en su caso
+                    ha marcado el acierto, el turno pasa al siguiente jugador.</p>
+            </div>
+            <div class="apartado6">
+                <h3>Dificultad de los temas y ayuda</h3>
+                <p>El programa puede aleatoriamente ofrecer tres niveles de ayuda en cada sopa de letras: en el
+                    más difícil solo se muestra la longitud de las palabras por encontrar; en el más fácil se
+                    muestran todas las palabras; y en el nivel intermedio, las letras se van descubriendo a
+                    medida que los jugadores comenten fallos o no logran encontrar las palabras escondidas.
+                    Cuando la partida consta de 3 sopas de letras, cada una de las sopas tiene un nivel de ayuda
+                    distinto.
+
+                    Los temas que el juego plantea son muy variados y por tanto su dificultad también puede ser
+                    muy variable. Para compensar la dificultad y evitar que sea excesivamente fácil o
+                    complicada, la elección del tema y palabras está condicionada por el nivel de ayuda de la
+                    sopa.</p>
+            </div>
+            <div class="apartado7">
+                <h1>Final</h1>
+                <p>Cada sopa de letras finaliza cuando se encuentran todas las palabras escondidas, si bien el
+                    programa puede dar la sopa por finalizada cuando resta por encontrar alguna de las palabras
+                    y el tiempo se prolonga sin que ninguno de los jugadores lo consiga.</p>
+            </div>
+
+            <!--En un futuro implementaremos un video propio de como usar la página-->
+            <div class="video1">
+                <video controls autoplay muted>
+                    <source src="../Multimedia/Videos/SOPA_De_LETRAS_20_Animales.mp4.mp4" type="video/mp4">
+                    No se ha podido reproducir el video
+                </video>
+            </div>
+            <div class="video2">
+                <iframe src="https://www.youtube.com/embed/OOvI_PTduiQ?si=HKs2Y1Mz-DbM9k7I&autoplay=1&mute=1"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="videos">
-        <video width="560" height="315" controls autoplay muted>
-            <source src="../Multimedia/Videos/SOPA_De_LETRAS_20_Animales.mp4.mp4" type="video/mp4">
-            No se ha podido reproducir el video
-        </video>
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/OOvI_PTduiQ?si=HKs2Y1Mz-DbM9k7I&autoplay=1&mute=1"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>    
     </main>
     <footer>
         <div class="redes-sociales">
