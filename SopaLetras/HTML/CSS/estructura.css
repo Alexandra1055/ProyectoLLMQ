@@ -105,6 +105,24 @@ header #logout {
   gap: 1em;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 9;
+}
+
+#mySidebar:target + .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /*Aside*/
 #aside-menu {
   width: 85%;
@@ -186,6 +204,10 @@ footer div{
 
 }
 
+.user .overlay{
+  background-image: linear-gradient(var(--usuario-primary), transparent);
+}
+
 .user #aside-menu{
   background: var(--usuario-secondary);
   color: var(--usuario-primary);
@@ -207,7 +229,10 @@ footer div{
 }
 .admin .sidebar-nav ul li ul {
   background-color: var(--admin-primary);
+}
 
+.admin .overlay{
+  background-image: linear-gradient(var(--admin-primary), transparent);
 }
 
 .admin #aside-menu{

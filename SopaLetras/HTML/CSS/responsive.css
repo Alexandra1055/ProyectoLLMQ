@@ -94,7 +94,11 @@
 
 
   footer{
+<<<<<<< Updated upstream
     position: static;
+=======
+    position:static;
+>>>>>>> Stashed changes
   }
   .footer-iniciouser{
     position: fixed;
