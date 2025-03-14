@@ -186,14 +186,6 @@ main form a {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 2em;
-        width: 50%;
-        margin-top: 6.5em;
-    }
-
-    main .formulario .estructura-form{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         padding: 1em;
     }
     .formulario{
@@ -204,9 +196,6 @@ main form a {
         align-items: center;
         width: 550px;
         max-width: 800px;
-    } 
-    .login form {
-        margin-top: 0.5rem;
     }
     .form-column1,.form-column2 {
         gap: 0.5em;
