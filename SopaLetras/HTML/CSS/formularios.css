@@ -179,7 +179,6 @@ main form a {
 @media (min-width: 1024px) {
 
     main .formulario form{
-<<<<<<< Updated upstream
         width: 70%;
     }
 
@@ -187,7 +186,6 @@ main form a {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 2em;
-=======
         width: 50%;
         margin-top: 6.5em;
     }
@@ -196,7 +194,6 @@ main form a {
         display: flex;
         justify-content: space-around;
         align-items: center;
->>>>>>> Stashed changes
         padding: 1em;
     }
     .formulario{

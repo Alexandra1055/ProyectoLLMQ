@@ -120,6 +120,7 @@ header #logout {
 #mySidebar:target + .overlay {
   opacity: 1;
   visibility: visible;
+  animation: fade-in 300ms ease-in-out forwards;
 }
 
 
