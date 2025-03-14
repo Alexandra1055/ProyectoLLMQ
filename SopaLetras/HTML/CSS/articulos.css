@@ -37,7 +37,6 @@ article .articulo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #0e244b;
     font-size: 1.05em;
 }
 
@@ -117,6 +116,10 @@ article .articulo {
 .user .ultima_noticia {
     background-color: var(--usuario-primary);
     color: var(--usuario-secondary);
+}
+
+.user .articulo-noticia .contenido-articulo {
+    color: var(--usuario-primary);
 }
 
 /*Colores Admin*/
