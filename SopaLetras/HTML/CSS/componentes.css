@@ -48,7 +48,6 @@ ol {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
-  background-color: var(--usuario-bg-light, #f3f3f3);
   padding: 1rem;
   max-width: 100%;
   border-radius: 0.2rem;
@@ -63,17 +62,12 @@ ol {
 }
 
 .ranking li {
-  background-color: var(--admin-bg-dark);
   color: white;
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
 }
 
-.ranking li:nth-child(even) {
-  background-color: var(--admin-bg-light);
-  color: black;
-}
 
 .Llistausuaris > ul {
   list-style: none;
@@ -121,19 +115,23 @@ ol {
   z-index: 10;
 }
 
-iframe {
-  margin: 5%;
-  max-width: 60%;
-  height: 50%;
-  padding: 0.5em;
-  margin-left: 1rem;
+.mapa iframe {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
 }
-.mapa{
+.contenido-mapa{
   display: flex;
   justify-content: center;
+  align-items: center;
+  
+}
+.mapa{
+  align-items: center;
   background-color: var(--usuario-bg-light);
   box-shadow: 0.1rem 0.1rem var(--usuario-primary);
-  border-radius: 1rem;
+  padding: 1em;
+  border-radius: 8px;
 }
 
 .estrellas {
@@ -143,6 +141,21 @@ iframe {
 .estrellas img{
   height: 15rem;
   width: 25rem;
+}
+
+/* Colores user */
+
+.Llistausuaris {
+  background-color: var(--usuario-bg-light, #f3f3f3);
+}
+
+.ranking li:nth-child(even) {
+  background-color: var(--admin-bg-light);
+  color: black;
+}
+
+.ranking li {
+  background-color: var(--admin-bg-dark);
 }
 
 @media (min-width: 720px) {
@@ -159,18 +172,13 @@ iframe {
     grid-template-columns: repeat(8,1fr);
   }
 
-  iframe {
-    margin: 5%;
-    max-width: 70%;
-    height: 30%;
-    padding: 0.5em;
-    margin-left: 3rem;
-  }
-  .mapa{
-    margin: 8rem 7rem 8rem 10rem;
-    height: 50;
-    max-width: 700px;
-  }
+.mapa iframe {
+  width: 550px;
+  height: 500px;
+}
+.contenido-mapa{
+  margin-top: 5em;
+}
   #Cont_LlistaU{
     margin-top: 8rem;
   }
@@ -207,18 +215,6 @@ iframe {
   }
   .letras{
     grid-template-columns: repeat(12,1fr);
-  }
-
-  iframe {
-    display: inline-block;
-    margin: 5%;
-    max-width: 90%;
-    height: 30%;
-    padding: 0.5em;
-    margin-left: 3rem;
-  }
-  .mapa{
-    margin-left: 12rem;
   }
   #Cont_LlistaU{
     margin-top: 8rem;
