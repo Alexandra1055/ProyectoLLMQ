@@ -28,12 +28,16 @@ main form {
 .login, .loginadmin {
     padding: 1em;
     width: 80%;
+    display: flex;
 }
 .contenidormain{
     display: flex;
     justify-content: center;
 }
-.login form, .loginadmin form {
+.login form, .loginadmin form , .loginadmin form p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -165,7 +169,6 @@ main form a {
     .login, .loginadmin {
         align-items: center;
         width: 350px;
-        max-width: 400px;
     }
 
     .login form {

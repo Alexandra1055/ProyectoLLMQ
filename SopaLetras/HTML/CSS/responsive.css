@@ -92,10 +92,11 @@
     flex-direction: column;
   }
 
-
-  footer{
-    position: static;
+  main{
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
+
   .footer-iniciouser{
     position: fixed;
   }
@@ -109,9 +110,11 @@
     gap: 2em;
   }
 
-  main {
-    padding: 4em;
-    max-width: auto;
+  main{
+    margin-top: 7em;
+    margin-bottom: 7em;
   }
-
+  footer{
+    position: fixed;
+  }
 }

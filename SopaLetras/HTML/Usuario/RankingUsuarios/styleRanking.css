@@ -1,3 +1,20 @@
+.otros-contenidos-main {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.otros-contenidos-ranking-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otros-contenidos-contenido {
+    text-align: center;
+    padding: 2em;
+}
+
 /* Contenedor principal */
 .contenido-ranking-usuario {
     display: grid;
@@ -32,14 +49,26 @@
     gap: 1rem;
 }
 
-.imagen-ranking img {
+.imagen-ranking img,
+.imagen-ranking1 img,
+.imagen-ranking2 img,
+.imagen-ranking3 img {
     width: 150px;
-    height: 200px; 
-    border-radius: 0.5rem; 
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    height: 200px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.377);
 }
 
-.imagen-ranking img:hover {
+.imagen-ranking1 img,
+.imagen-ranking2 img,
+.imagen-ranking3 img {
+    margin: 1rem;
+}
+
+.imagen-ranking img:hover,
+.imagen-ranking1 img:hover,
+.imagen-ranking2 img:hover,
+.imagen-ranking3 img:hover {
     box-shadow: 2px 10px rgba(22, 22, 22, 0.185);
     transform: scale(1.05);
     cursor: pointer;
@@ -56,13 +85,39 @@
 .descripcion-usuario {
     background-color: var(--usuario-bg-light);
 }
-.tabla-puntuacion-usuario,.lista-datos-usuario{
+
+.tabla-puntuacion-usuario,
+.lista-datos-usuario {
+    background-color: var(--usuario-bg-dark);
+    color: var(--usuario-secondary);
+}
+.user .otros-contenidos-main{
+    color: var(--usuario-accent);
+}
+.user .otros-contenidos-contenido {
     background-color: var(--usuario-bg-dark);
     color: var(--usuario-secondary);
 }
 
 
 @media (min-width: 720px) {
+
+    /* otros contenidos */
+    .otros-contenidos-main {
+        margin-top: 5em;
+    }
+
+    .otros-contenidos-contenido {
+        gap: 2em;
+        padding: 2em;
+        margin-top: 2em;
+        border-radius: 8px;
+        flex-wrap: wrap;
+        display: flex;
+        box-shadow: 0 0.5rem 1rem rgba(2, 2, 2, 0.623);
+    }
+
+    /* ranking individual */
     .contenido-ranking-usuario {
         grid-template-columns: repeat(2, 1fr);
         height: 80vh;
@@ -71,7 +126,10 @@
             "puntuacion datos";
         align-content: center;
     }
-    .tabla-puntuacion-usuario:hover,.lista-datos-usuario:hover,.descripcion-usuario:hover  {
+
+    .tabla-puntuacion-usuario:hover,
+    .lista-datos-usuario:hover,
+    .descripcion-usuario:hover {
         box-shadow: 0 0.5rem 1rem rgba(2, 2, 2, 0.623);
         transform: scale(1.02);
         cursor: pointer;
@@ -79,6 +137,14 @@
 }
 
 @media (min-width: 1024px) {
+
+    /* otros contenidos */
+    .otros-contenidos-main {
+        margin-top: 6em;
+    }
+
+
+    /* ranking individual */
     .contenido-ranking-usuario {
         grid-template-columns: repeat(3, 1fr);
         height: 70vh;
