@@ -1,5 +1,6 @@
 .bento1 {
     margin-top: 2em;
+    margin-bottom: 3em;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;

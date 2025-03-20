@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="../CSS/componentes.css">
     <link rel="stylesheet" href="../CSS/responsive.css">
     <link rel="stylesheet" href="../CSS/variables.css">
-    <link rel="stylesheet" href="../CSS/imagen-fondo.css">
     <link rel="stylesheet" href="../CSS/formularios.css">
-    <link rel="stylesheet" href="../CSS/articulos.css">
     <link rel="icon" type="image/x-icon" href="../Multimedia/Imagenes/favicon.ico">
 </head>
 
@@ -75,23 +73,24 @@
     <main>
         <div class="formulario">
             <h3>Eliminar Sopas de Letras</h3>
-            <div class="contenidormain">
+            <div class="formulario-eliminar-sopas">
                 <form action="procesar_bajaSopa_Admin.php" method="post">
-
                     <h4>Nivel:</h4>
-                    <label>Sopa de Letras: Fácil</label>
-                    <input type="checkbox" id="sopa_facil" name="sopa_facil" value="Sopa facil">
-    
-                    <label>Sopa de Letras: Intermedio</label>
-                    <input type="checkbox" id="sopa_intermedio" name="sopa_intermedio" value="Sopa intermedio">
-    
-                    <label>Sopa de Letras: Difícil</label>
-                    <input type="checkbox" id="sopa_dificl" name="sopa_dificil" value="Sopa dificil">
+                    <div>
+                        <label>Sopa de Letras: Fácil</label>
+                        <input type="checkbox" id="sopa_facil" name="sopa_facil" value="Sopa facil">
+                    </div>
+                    <div>
+                        <label>Sopa de Letras: Intermedio</label>
+                        <input type="checkbox" id="sopa_intermedio" name="sopa_intermedio" value="Sopa intermedio">
+                    </div>
+                    <div>
+                        <label>Sopa de Letras: Difícil</label>
+                        <input type="checkbox" id="sopa_dificl" name="sopa_dificil" value="Sopa dificil">
+                    </div>
                 </form>
             </div>
-
-
-        <button type="submit">Eliminar</button>
+            <button type="submit">Eliminar</button>
         </div>
     </main>
     <footer>

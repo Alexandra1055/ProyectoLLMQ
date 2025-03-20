@@ -21,15 +21,15 @@
 <body class="user">
     <div class="contenedor_imagen_fondo">
         <header>
-                <div class="menu_nav">
-                    <div class="menu_header">
-                        <div class="logo">
+            <div class="menu_nav">
+                <div class="menu_header">
+                    <div class="logo">
                         <a href="./wordSearch.html">
                             <img src="../Multimedia/Imagenes/logo2.PNG" alt="Logo" height="80" width="80">
                         </a>
                     </div>
                     <div class="sidebar">
-                        <a href="#mySidebar" class="sidebar-abrir-boton">☰</a>                 
+                        <a href="#mySidebar" class="sidebar-abrir-boton">☰</a>
                     </div>
                     <div class="sidebar-nav" id="mySidebar">
                         <a href="#" class="sidebar-cerrar-boton">&times;</a>
@@ -93,87 +93,130 @@
                 </aside>
             </div>
         </header>
-    <main>
-        <!-- Elemento de audio con reproducción automática y en bucle -->
-    <audio id="audio" autoplay loop controls>
-        <source src="../Multimedia/Audio/instrumental_audio_juego.mp" type="audio/mp3">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
-        <!--Cada sopa esta dividida por categorias con tres niveles de dificultad, 
-ademas hemos pensado que se pueden crear sopas en la categoria Eventos especiales segun la epoca del año-->
-        <h3>Sopas de Letras: &#128270;</h3>
-        <form action="procesar_juego.php" method="post">
-            <label for="usuarios">Selecciona un nivel:</label>
-            <select id="usuarios" name="usuarios">
-                <option value="animalesP">Facil</option>
-                <option value="profesionesI">Intermedio</option>
-                <option value="comidaE">Dificil</option>
-            </select><!--Se han eliminado categorias para simplificar, aunque se mantinen para conservar nuestro primer formato-->
-            
-            <button id="jugar" type="submit">Jugar</button>
-        </form>
+        <main>
+            <!-- Elemento de audio con reproducción automática y en bucle -->
+            <audio id="audio" autoplay loop controls>
+                <source src="../Multimedia/Audio/instrumental_audio_juego.mp" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="contenido-pagina-juego">
+                <div class="eleccio-juego">
+                    <h3>Sopas de Letras: &#128270;</h3>
+                    <form action="procesar_juego.php" method="post">
+                        <label for="usuarios">Selecciona un nivel:</label>
+                        <select id="usuarios" name="usuarios">
+                            <option value="facil">Facil</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="dificil">Dificil</option>
+                        </select>
 
-        <h2>Sopa de Letras Principiante</h2>
-        <div class="info-tiempo-resultado">
-            <label for="tiempo">Tiempo:</label>
-            <input type="text" name="tiempo" id="input-tiempo" disabled>
-            
-            <label for="resultado">Resultado:</label>
-            <input type="text" name="resultado" id="input-resultado" disabled>
-        </div>
-    <div class="listado-juego">    
-        <div class="listado-palabras">
-            <ul class="columna">
-                <li>OSO</li>
-                <li>PANDA</li>
-                <li>LORO</li>
-                <li>TIGRE</li>
-                <li>LEON</li>
-            </ul>
-            <ul class="columna">
-                <li>GATO</li>
-                <li>PERRO</li>
-                <li>LOBO</li>
-                <li>PEZ</li>
-                <li>MOSCA</li>
-            </ul>
-        </div>
-        <div class="juego-sopa">
-            <button class="b-sopa">O</button><button class="b-sopa">S</button><button class="b-sopa">O</button><button class="b-sopa">T</button><button class="b-sopa">G</button><button class="b-sopa">L</button><button class="b-sopa">O</button><button class="b-sopa">P</button><button class="b-sopa">M</button><button class="b-sopa">N</button>
-            <button class="b-sopa">A</button><button class="b-sopa">P</button><button class="b-sopa">A</button><button class="b-sopa">N</button><button class="b-sopa">D</button><button class="b-sopa">A</button><button class="b-sopa">F</button><button class="b-sopa">R</button><button class="b-sopa">I</button><button class="b-sopa">C</button>
-            <button class="b-sopa">P</button><button class="b-sopa">U</button><button class="b-sopa">L</button><button class="b-sopa">O</button><button class="b-sopa">R</button><button class="b-sopa">O</button><button class="b-sopa">H</button><button class="b-sopa">B</button><button class="b-sopa">X</button><button class="b-sopa">T</button>
-            <button class="b-sopa">L</button><button class="b-sopa">O</button><button class="b-sopa">B</button><button class="b-sopa">O</button><button class="b-sopa">E</button><button class="b-sopa">S</button><button class="b-sopa">T</button><button class="b-sopa">R</button><button class="b-sopa">S</button><button class="b-sopa">L</button>
-            <button class="b-sopa">P</button><button class="b-sopa">E</button><button class="b-sopa">R</button><button class="b-sopa">R</button><button class="b-sopa">O</button><button class="b-sopa">T</button><button class="b-sopa">I</button><button class="b-sopa">G</button><button class="b-sopa">R</button><button class="b-sopa">E</button>
-            <button class="b-sopa">T</button><button class="b-sopa">I</button><button class="b-sopa">G</button><button class="b-sopa">R</button><button class="b-sopa">E</button><button class="b-sopa">F</button><button class="b-sopa">E</button><button class="b-sopa">K</button><button class="b-sopa">A</button><button class="b-sopa">E</button>
-            <button class="b-sopa">M</button><button class="b-sopa">O</button><button class="b-sopa">S</button><button class="b-sopa">C</button><button class="b-sopa">A</button><button class="b-sopa">K</button><button class="b-sopa">W</button><button class="b-sopa">O</button><button class="b-sopa">R</button><button class="b-sopa">S</button>
-            <button class="b-sopa">L</button><button class="b-sopa">E</button><button class="b-sopa">O</button><button class="b-sopa">N</button><button class="b-sopa">R</button><button class="b-sopa">E</button><button class="b-sopa">O</button><button class="b-sopa">H</button><button class="b-sopa">L</button><button class="b-sopa">T</button>
-            <button class="b-sopa">L</button><button class="b-sopa">G</button><button class="b-sopa">A</button><button class="b-sopa">T</button><button class="b-sopa">O</button><button class="b-sopa">P</button><button class="b-sopa">M</button><button class="b-sopa">A</button><button class="b-sopa">P</button><button class="b-sopa">D</button>
-            <button class="b-sopa">F</button><button class="b-sopa">E</button><button class="b-sopa">S</button><button class="b-sopa">H</button><button class="b-sopa">Y</button><button class="b-sopa">L</button><button class="b-sopa">Q</button><button class="b-sopa">E</button><button class="b-sopa">Z</button><button class="b-sopa">X</button>
-        </div>
-        
-        <button id="fin" type="submit">Finalizar</button>
+                        <button id="jugar" type="submit">Jugar</button>
+                    </form>
+                </div>
+                <div class="contadores-juego">
+                    <h2>Sopa de Letras Principiante</h2>
+                    <div class="info-tiempo-resultado">
+                        <label for="tiempo">Tiempo:</label>
+                        <input type="text" name="tiempo" id="input-tiempo" disabled>
+
+                        <label for="resultado">Resultado:</label>
+                        <input type="text" name="resultado" id="input-resultado" disabled>
+                    </div>
+                </div>
+                <div class="listado-palabras">
+                    <ul class="columna">
+                        <li>OSO</li>
+                        <li>PANDA</li>
+                        <li>LORO</li>
+                        <li>TIGRE</li>
+                        <li>LEON</li>
+                    </ul>
+                    <ul class="columna">
+                        <li>GATO</li>
+                        <li>PERRO</li>
+                        <li>LOBO</li>
+                        <li>PEZ</li>
+                        <li>MOSCA</li>
+                    </ul>
+                </div>
+                <div class="juego-sopa">
+                    <button class="b-sopa">O</button><button class="b-sopa">S</button><button
+                        class="b-sopa">O</button><button class="b-sopa">T</button><button
+                        class="b-sopa">G</button><button class="b-sopa">L</button><button
+                        class="b-sopa">O</button><button class="b-sopa">P</button><button
+                        class="b-sopa">M</button><button class="b-sopa">N</button>
+                    <button class="b-sopa">A</button><button class="b-sopa">P</button><button
+                        class="b-sopa">A</button><button class="b-sopa">N</button><button
+                        class="b-sopa">D</button><button class="b-sopa">A</button><button
+                        class="b-sopa">F</button><button class="b-sopa">R</button><button
+                        class="b-sopa">I</button><button class="b-sopa">C</button>
+                    <button class="b-sopa">P</button><button class="b-sopa">U</button><button
+                        class="b-sopa">L</button><button class="b-sopa">O</button><button
+                        class="b-sopa">R</button><button class="b-sopa">O</button><button
+                        class="b-sopa">H</button><button class="b-sopa">B</button><button
+                        class="b-sopa">X</button><button class="b-sopa">T</button>
+                    <button class="b-sopa">L</button><button class="b-sopa">O</button><button
+                        class="b-sopa">B</button><button class="b-sopa">O</button><button
+                        class="b-sopa">E</button><button class="b-sopa">S</button><button
+                        class="b-sopa">T</button><button class="b-sopa">R</button><button
+                        class="b-sopa">S</button><button class="b-sopa">L</button>
+                    <button class="b-sopa">P</button><button class="b-sopa">E</button><button
+                        class="b-sopa">R</button><button class="b-sopa">R</button><button
+                        class="b-sopa">O</button><button class="b-sopa">T</button><button
+                        class="b-sopa">I</button><button class="b-sopa">G</button><button
+                        class="b-sopa">R</button><button class="b-sopa">E</button>
+                    <button class="b-sopa">T</button><button class="b-sopa">I</button><button
+                        class="b-sopa">G</button><button class="b-sopa">R</button><button
+                        class="b-sopa">E</button><button class="b-sopa">F</button><button
+                        class="b-sopa">E</button><button class="b-sopa">K</button><button
+                        class="b-sopa">A</button><button class="b-sopa">E</button>
+                    <button class="b-sopa">M</button><button class="b-sopa">O</button><button
+                        class="b-sopa">S</button><button class="b-sopa">C</button><button
+                        class="b-sopa">A</button><button class="b-sopa">K</button><button
+                        class="b-sopa">W</button><button class="b-sopa">O</button><button
+                        class="b-sopa">R</button><button class="b-sopa">S</button>
+                    <button class="b-sopa">L</button><button class="b-sopa">E</button><button
+                        class="b-sopa">O</button><button class="b-sopa">N</button><button
+                        class="b-sopa">R</button><button class="b-sopa">E</button><button
+                        class="b-sopa">O</button><button class="b-sopa">H</button><button
+                        class="b-sopa">L</button><button class="b-sopa">T</button>
+                    <button class="b-sopa">L</button><button class="b-sopa">G</button><button
+                        class="b-sopa">A</button><button class="b-sopa">T</button><button
+                        class="b-sopa">O</button><button class="b-sopa">P</button><button
+                        class="b-sopa">M</button><button class="b-sopa">A</button><button
+                        class="b-sopa">P</button><button class="b-sopa">D</button>
+                    <button class="b-sopa">F</button><button class="b-sopa">E</button><button
+                        class="b-sopa">S</button><button class="b-sopa">H</button><button
+                        class="b-sopa">Y</button><button class="b-sopa">L</button><button
+                        class="b-sopa">Q</button><button class="b-sopa">E</button><button
+                        class="b-sopa">Z</button><button class="b-sopa">X</button>
+                </div>
+                <div id="fin">
+                    <button type="submit">Finalizar</button>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/?next=%2F"><img
+                        src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="30"
+                        width="30"></a>
+                <a href="https://www.facebook.com/pablo.contento.710"><img
+                        src="../Multimedia/Imagenes/redes/Facebook_Logo.png" alt="Not Found ING" height="30"
+                        width="30"></a>
+            </div>
+            <div class="contenido-footer">
+                <i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez,</a> <a
+                        href="mailto:pescanellas925@alumnes.politecnicllevant.cat ">PEscanellas </a><a
+                        href="mailto:pfebrer408@alumnes.politecnicllevant.cat ">&amp; PFebrer</a></i>
+                <b><a href="../Usuario/wordSearch.html"><img src="../Multimedia/Imagenes/favicon.ico"
+                            alt="No se ha encontrado el logo" height="20" width="20">Word Search, sopa de letras</a></b>
+            </div>
+        </footer>
+
     </div>
-    </main>
-
-    <footer>
-        <div class="redes-sociales">
-            <a href="https://www.instagram.com/?next=%2F"><img
-                    src="../Multimedia/Imagenes/redes/Instagram_icon.png.webp" alt="Not Found IMG" height="30"
-                    width="30"></a>
-            <a href="https://www.facebook.com/pablo.contento.710"><img
-                    src="../Multimedia/Imagenes/redes/Facebook_Logo.png" alt="Not Found ING" height="30"
-                    width="30"></a>
-        </div>
-        <div class="contenido-footer">
-            <i><b>Correo: </b><a href="mailto:agonzalez1055@alumnes.politecnicllevant.cat">AGonzalez,</a> <a
-                    href="mailto:pescanellas925@alumnes.politecnicllevant.cat ">PEscanellas </a><a
-                    href="mailto:pfebrer408@alumnes.politecnicllevant.cat ">&amp; PFebrer</a></i>
-            <b><a href="../Usuario/wordSearch.html"><img src="../Multimedia/Imagenes/favicon.ico"
-                        alt="No se ha encontrado el logo" height="20" width="20">Word Search, sopa de letras</a></b>
-        </div>
-    </footer>
-
-</div>
 </body>
 
 </html>

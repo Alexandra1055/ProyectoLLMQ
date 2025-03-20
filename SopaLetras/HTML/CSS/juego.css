@@ -1,97 +1,322 @@
-.juego-sopa{
+.contenido-pagina-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.eleccio-juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.eleccio-juego form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contadores-juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.7rem;
+}
+
+.info-tiempo-resultado {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.info-tiempo-resultado label,
+.info-tiempo-resultado input {
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 50%;
+}
+
+.listado-palabras {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+}
+
+.listado-palabras .columna {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.listado-palabras ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+.listado-palabras li {
+    list-style: none;
+    background: #f2f2f2;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.juego-sopa,
+.tablero-sopa {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 5px;
-    width: fit-content;
-    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.juego-sopa .b-sopa,
+.b-letra,
+.tablero-sopa button {
+    margin: 0.2em;
+    width: 40px;
+    height: 40px;
+}
+
+#fin {
+    align-self: center;
+    margin-bottom: 1em;
+}
+
+/* Clases especificas de alta-sopa */
+.alta-sopa-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.formulario-alta-sopa {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.niveles {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5em;
+}
+
+.palabras-alta-sopa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.palabras-alta-sopa .campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.letras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 3em;
+}
+
+.alta-sopa-contenido .botones {
+    margin-top: 1em;
+    display: flex;
+    gap: 1rem;
+}
+
+/*Colores User*/
+.user .contenido-pagina-juego {
+    color: var(--usuario-primary);
+}
+
+/*Colores Admin*/
+.admin .contenido-pagina-juego {
+    color: var(--admin-primary);
+}
+
+.admin .alta-sopa-contenido {
+    color: var(--admin-primary);
+}
+
+@media (min-width: 720px) {
+
+    .listado-palabras ul {
+        gap: 0.6rem;
     }
-    
-    #fin{
-        margin: 0.5rem auto;
+
+    .listado-palabras li {
+        padding: 0.8rem;
     }
-    
-    main h3{
-        margin-top: -1rem;
+
+    .juego-sopa .b-sopa,
+    .b-letra,
+    .tablero-sopa button {
+        margin: 0.2em;
+        width: 50px;
+        height: 50px;
     }
-    
-    main select, form button{
-        margin-top: 0.5rem;
-    }
-    
-    main h2, main .info-tiempo-resultado{
-        margin: 1rem 0 0.5rem 0;
-    }
-    
-    .info-tiempo-resultado{
-        display: flex;
-        align-items: center;
+
+    /* clases de alta-sopa */
+
+    .niveles {
+        flex-direction: row;
         justify-content: center;
-        gap: 0.5rem;
     }
-    
-    .listado-palabras {
+
+    .palabras-alta-sopa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .palabras-alta-sopa .campo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenido-pagina-juego {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 1rem;
+        grid-template-rows: repeat(5, 1fr);
+        justify-items: center;
+        gap: 1em;
+    }
+
+    .eleccio-juego {
+        grid-column: span 3 / span 3;
+        grid-row: span 2 / span 2;
+        width: 85%;
+    }
+
+    .contadores-juego {
+        grid-column: span 2 / span 2;
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    .info-tiempo-resultado {
+        flex-direction: column;
+    }
+
+    .listado-palabras {
+        flex-direction: row;
         justify-content: center;
-        text-align: center;
-        margin: 1rem;
+        align-self: flex-start;
+        justify-self: flex-end;
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-row-start: 3;
+        width: 70%;
     }
-    
+
+    .listado-palabras .columna {
+        flex-direction: column;
+        gap: 2em;
+        width: 90%;
+    }
+
     .listado-palabras ul {
-        display: contents;
+        gap: 0.7rem;
+        margin: 1em;
     }
-    
+
     .listado-palabras li {
-        list-style: none;
-        background: #f2f2f2;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        font-weight: bold;
+        padding: 0.8rem;
     }
 
-    @media (min-width: 720px) and (max-width: 1024px){
-        
-        main{
-            margin-top: 10rem;
-        }
-
-        #fin{
-            margin-bottom: 5rem;
-        }
+    .juego-sopa {
+        grid-column: span 3 / span 3;
+        grid-row: span 3 / span 3;
+        grid-column-start: 3;
+        grid-row-start: 3;
+        align-self: flex-start;
     }
-    
-    @media (min-width: 1024px) {
-    
-        main h3{
-            margin-top: 5rem;
-        }
-    
-        .info-tiempo-resultado {
-            display: flex;
-            flex-direction: row; 
-            gap: 10px;
-            justify-content: left;
-        }
-    
-        .listado-palabras {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(5, auto);
-            gap: 1rem;
-            margin: 1rem;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .listado-juego, .letras{
-            display: grid;
-            grid-template-columns: repeat(2, auto);
-            margin: 1.5rem;
-        }
 
-        #fin{
-            grid-column: 2/-1;
-        }
+    .juego-sopa .b-sopa,
+    .letras .b-letra,
+    .tablero-sopa .b-tsopa {
+        margin: 0.2em;
+        width: 60px;
+        height: 60px;
     }
+
+    #fin {
+        grid-column-start: 2;
+        grid-row-start: 5;
+        align-self: flex-start;
+        justify-self: flex-end;
+    }
+
+    /* clases de alta-sopa */
+    .alta-sopa-contenido {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .alta-sopa-contenido .formulario {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+        gap: 8px;
+        justify-items: center;
+    }
+
+    .formulario-alta-sopa {
+        grid-column: span 3 / span 3;
+        align-items: center;
+    }
+
+    .tablero-sopa {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        align-self: flex-start;
+    }
+
+    .niveles {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .palabras-alta-sopa {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.3rem;
+    }
+
+    .letras {
+        grid-column-start: 1;
+    grid-row-start: 2;
+        align-self: flex-start;
+        justify-self: flex-end;
+    }
+
+    .alta-sopa-contenido .botones {
+        grid-row-start: 3;
+    }
+}
