@@ -6,6 +6,10 @@ main {
     gap: 0.5rem;
 }
 
+.puntuacion{
+    margin-bottom: 4em;
+}
+
 .dificultat{
     color: white;
 }

@@ -1,3 +1,4 @@
+/* Este css contiene tanto el juego de la pagina de usuario como alta sopa de la parte del administador */
 .contenido-pagina-juego {
     display: flex;
     flex-direction: column;
@@ -98,9 +99,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem;
-    margin-top: 2em;
     margin-bottom: 2em;
     text-align: center;
 }
@@ -121,13 +121,14 @@
 
 .palabras-alta-sopa {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
 .palabras-alta-sopa .campo {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .letras {
@@ -278,7 +279,7 @@
     .alta-sopa-contenido .formulario {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 8px;
         justify-items: center;
     }
@@ -286,6 +287,7 @@
     .formulario-alta-sopa {
         grid-column: span 3 / span 3;
         align-items: center;
+        width: 95%;
     }
 
     .tablero-sopa {
@@ -310,7 +312,7 @@
 
     .letras {
         grid-column-start: 1;
-    grid-row-start: 2;
+        grid-row-start: 2;
         align-self: flex-start;
     }
 

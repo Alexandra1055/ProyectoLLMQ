@@ -13,6 +13,32 @@ button {
   display: grid;
   grid-template-columns: repeat(6,1fr);
 }
+
+main input[type="submit"], main input[type="reset"] ,main input[type="button"]{
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+
+button input[type="submit"] {
+  margin-bottom: 0.5em;
+
+}
+
+main button input[type="submit"]:hover, main #jugar[type="submit"]:hover,main button[type="submit"]:hover,.botones button[type="submit"]:hover{
+  color: #7ed13a;
+}
+
+main button input[type="reset"]:hover,main #fin button[type="submit"]:hover,.botones button[type="reset"]:hover,.formulario-eliminar-sopas~button[type="submit"]:hover {
+  color: #f8421d;
+}
+
+main button input[type="button"]:hover,.admin main button[type="button"]:hover,.botones button[type="button"]:hover, .eleccio-juego button[type="submit"]:hover{
+  color: #f9a114;
+}
 /*Colores User -botones*/
 .user button{
   border: 2px solid var(--usuario-secondary);
@@ -22,6 +48,17 @@ button {
 .user button:hover {
   background-color: var(--usuario-secondary);
   color: var(--usuario-primary);
+}
+
+
+.user main input[type="submit"], .user main input[type="reset"],.user main input[type="button"] {
+  background-color: var(--usuario-primary);
+  color: var(--usuario-secondary);
+}
+
+.user main input[type="submit"]:hover, .user main input[type="reset"]:hover, .user main input[type="button"]:hover,main #jugar[type="submit"]:hover,.user main #fin button[type="submit"]:hover
+,.botones button[type="submit"]:hover,.botones button[type="reset"]:hover,.botones button[type="button"]:hover,.eleccio-juego button[type="submit"]:hover,.formulario-eliminar-sopas~button[type="submit"]:hover{
+  background-color: var(--usuario-hover);
 }
 
 /*Colores Admin -botones*/
@@ -34,6 +71,16 @@ button {
   background-color: var(--admin-secondary);
   color: var(--admin-primary);
 }
+
+.admin main form input[type="submit"], main form input[type="reset"]  {
+  background-color: var(--admin-primary);
+  color: var(--admin-secondary);
+}
+
+.admin main form input[type="submit"]:hover, main form input[type="reset"]:hover,.admin main button[type="button"]:hover {
+  background-color: var(--admin-hover);
+}
+
 
 /* Listas */
 ul,

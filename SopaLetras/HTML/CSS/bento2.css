@@ -9,7 +9,6 @@ main .contenido-ayuda {
     grid-template-columns: 1fr;
     justify-items: stretch;
     gap: 2em;
-    margin-top: 1em;
 }
 
 .contenido-ayuda div {

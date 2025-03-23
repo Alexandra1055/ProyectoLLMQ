@@ -49,7 +49,7 @@ header .menu_nav .sidebar-nav {
   position: fixed;
   top: 0;
   right: -90%;
-  width: 40%;
+  width: 60%;
   height: 100%;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
