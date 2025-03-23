@@ -5,6 +5,7 @@ main form {
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgb(156, 156, 156);
     text-align: center;
+    margin-bottom: 4em;
 }
 .formulario-configuracion{
     gap: 1.5rem;
@@ -84,8 +85,8 @@ input[type="range"] {
 }
 
 input[type="color"] {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -337,6 +338,7 @@ main form a {
     .formulario-eliminar-sopas{
         padding: 2em;
     }
+
 }
 
 /* Ordenador: Formularios */
@@ -369,5 +371,9 @@ main form a {
     }
     .descripcioConsulta{
         width: 100%;
+    }
+    input[type="color"] {
+        width: 35px;
+        height: 35px;
     }
 }

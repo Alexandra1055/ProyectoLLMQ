@@ -26,6 +26,11 @@ header .logo {
   justify-content: flex-start;
 }
 
+.admin header.login-admin{
+  display: flex;
+  justify-content: space-around;
+}
+
 header .menu_nav {
   display: flex;
   flex-direction: column;

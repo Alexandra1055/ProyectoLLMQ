@@ -10,10 +10,6 @@ main {
     color: white;
 }
 
-.estrellas img{
-    height: 15rem;
-    width: 25rem;
-}
 
 .puntuacion ul {
     display: grid;
@@ -45,6 +41,7 @@ main {
         margin-top: 7rem;
         margin-bottom: 7rem;
     }
+   
 }
 
 @media (min-width: 1024px){
@@ -64,4 +61,5 @@ main {
         margin-top: 5rem;
         margin-bottom: 5rem;
     }
+  
 }

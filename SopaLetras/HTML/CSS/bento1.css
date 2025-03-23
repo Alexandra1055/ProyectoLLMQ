@@ -15,9 +15,11 @@
     padding: 2em;
     gap: 1em;
     transition: transform 0.3s ease-in-out;
-    height: 70%;
 }
 
+.bento1 .ultima_noticia{
+    margin-bottom: 2em;
+}
 .bento1 img {
     width: 200px;
     height: 180px;

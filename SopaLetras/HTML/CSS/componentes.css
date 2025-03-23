@@ -134,13 +134,13 @@ ol {
   border-radius: 8px;
 }
 
-.estrellas {
+.estrellas{
   text-align: center;
 }
 
 .estrellas img{
-  height: 15rem;
-  width: 25rem;
+  height: 8rem;
+  width: 15rem;
 }
 
 /* Colores user */
@@ -199,8 +199,10 @@ ol {
   .Llistausuaris li:nth-child(10) { grid-column-start: 5; grid-row-start: 2;}
 
   .estrellas img{
-    margin-top: 5rem;
-  }
+    height: 12rem;
+    width: 20rem;
+    margin-top: 3em;
+}
 }
 
 @media (min-width: 1024px) {
@@ -223,4 +225,7 @@ ol {
     grid-template-columns: repeat(5, 0.5fr);
     
   }
+  .estrellas img{
+    margin-top: 5rem;
+}
 }
