@@ -11,6 +11,7 @@ section,
     grid-template-columns: 1fr;
     gap: 1em;
     justify-items: center;
+    margin-bottom: 4em;
 }
 
 
@@ -36,11 +37,6 @@ article .articulo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.05em;
-}
-
-.articulo-noticia .contenido-articulo h5{
-    font-size: 1.2em;
 }
 
 .articulo-noticia img {
@@ -70,6 +66,9 @@ article .articulo {
 .articulo6 {
     background-image: url('../Multimedia/Imagenes/sopa-de-letras-850x638.png');
 }
+.articulo-noticia .contenido-articulo h5{
+    font-size: 1.1em;
+}
 
 .contenido-noticias>div {
     border-radius: 10px;
@@ -94,7 +93,7 @@ article .articulo {
 }
 
 .contenido-noticias div {
-    padding: 1em;
+    padding: 0.3em;
     text-align: center;
      position: relative;
     z-index: 2; 
@@ -164,6 +163,10 @@ article .articulo {
 
     .articulo6 {
         grid-area: item6;
+    }
+
+    .articulo-noticia .contenido-articulo h5{
+        font-size: 1.2em;
     }
 }
 
