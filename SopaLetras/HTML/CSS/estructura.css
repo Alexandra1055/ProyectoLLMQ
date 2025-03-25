@@ -195,6 +195,7 @@ footer div{
 }
 
 /*Colores User*/
+
 .user header, .user footer{
   background-color: var(--usuario-primary);
   color: var(--usuario-secondary);
